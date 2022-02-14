@@ -34,23 +34,38 @@ Dentro do pacote Python Expert ainda teremos outros módulos:
 
  Conteudo:
 
+## Day 1
 
- 1. Introdução 
- 2. Programação e Linguagens
- 3. Como é formada a plataforma Python
- 4. Instalação e preparação do ambiente
- 5. Reposit;orio, git e seu primeiro script
- 6. Variáveis de ambiente
- 7. Tipos de instruções
- 8. Organização de blocos de código
- 9. Ambientes virtuais, instalação de pacotes e Ipython
- 10. Tipos de dados primitivos e compostos
- 11. Estruturas condicionais, booleanos, operadores e simbolos
- 12. Dict like objects
- 13. Dicas de refatoração de código 
- 14. Protocolos de Iteração (subscrição, fatiamento, for loops)
- 15. Tratamento de Erros LBYL e EAFP
- 16. Leitura de inputs do terminal
- 17. Repetições com while
- 18. Formatação de strings
- 
+1. Introdução 
+2. Programação e Linguagens
+3. Como é formada a plataforma Python
+4. Instalação e preparação do ambiente
+5. Repositório, git e seu primeiro script
+6. Variáveis de ambiente
+7. Tipos de instruções
+8. Organização de blocos de código
+9. Ambientes virtuais, instalação de pacotes e Ipython
+10. Protocolos e Tipos de dados primitivos 
+
+
+Exercicios: Hello world multi linguas, calculadora simples
+
+## Day 2
+
+11. Textos e formatação de strings
+12. Tipos de dados compostos
+13. Estruturas condicionais, booleanos, operadores e simbolos
+14. Dict like objects
+15. Dicas de refatoração de código
+16. Protocolos de Iteração (subscrição, fatiamento, for loops)
+17. Tratamento de Erros LBYL e EAFP
+18. Leitura de inputs do terminal
+19. Repetições com while
+
+exercicios: Number guessing, Calculadora, Sistema de reservas
+
+## Day 3
+
+20. Memória e escopo
+21. Funções
+
