@@ -68,6 +68,8 @@ Em Python podemos representar esta analogia com:
 str
 ```
 
+![](./imgs/memoria.png)
+
 Todos os objetos em **Python** são formados por essas 3 propriedades:
 
 - valor `"1000010" ou "B"`
