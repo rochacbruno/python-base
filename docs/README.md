@@ -9,17 +9,19 @@
    explorar conceitos avançados de Python.
 
 
- ## Python BASE
+## Python BASE
 
- Você está iniciando o Python BASE que é o primeiro passo para começar
- a sua carreira em desenvolvimento, este treinamento é pensado em \
- pessoas que nunca tiveram contato com programação antes, desde a teoria
- básica do que é programação, instalação e configuração do ambiente, 
- escolha de um editor de código e criação do seu primeiro script até
- a criação de várioos pequenos programas que vão abordar as principais
- funcionalidades do Python.
+Você está iniciando o Python BASE que é o primeiro passo para começar
+a sua carreira em desenvolvimento, este treinamento é pensado para
+pessoas que nunca tiveram contato com programação antes, ou que já
+possuem algum conhecimento em alguma outra linguagem e precisam aprender
+Python e vamos desde a teoria básica do que é programação, instalação e configuração do ambiente, 
+escolha de um editor de código e criação do seu primeiro script até
+a criação de vários pequenos programas que vão abordar as principais
+funcionalidades do Python.
 
- Conteudo:
+---
+## Conteudo:
 
 ## Day 1
 
@@ -47,11 +49,13 @@ Exercicios: Hello world multi linguas
 16. Exercicio com Listas, Tuplas, Loops e Condicionais
 17. Sets (conjuntos)
 18. Dicionários
+14. Bonus: Refatorando nosso Hello World com dicionários
 
-Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de aula.
+Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de aula
 
 ## Day 3
 
+. Stdin e Stdout
 . Leitura de inputs 
   - Envvars
   - CLI arguments
@@ -81,20 +85,21 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
     - debugging no terminal `--until`
     - debugging em caso de erro
 
-exercicios: Number guessing, Calculadora, Sistema de reservas, Aplicativo de anotações
+exercicios: Number guessing, Calculadora, Sistema de reservas, Aplicativo de anotações,
+            Hello World Multi linguas com input e argumentos de cli.
 
 ## Day 4
 
 . Funções builtin uteis
   - sum, len, vars, min, max, filter, map
 . Funções úteis da biblioteca padrão
-  - pprint, json, collections, itertools, functools etc
+  - pprint, collections, itertools, functools etc
 . Memória e escopo
 . Definindo suas próprias Funções
   - *
 . decorators (uso)
 . O sistema de imports do Python
-. Organizando o projeto com pacote e módulos
+. Organizando o projeto com pacotes e módulos
 . Gerenciamento de dependencias
 . Libs uteis para um projeto Python (dynaconf, black, loguru)
 . Criando um pacote instalável
@@ -105,7 +110,7 @@ Exercicios:
 ## Day 5
 
 . Qualidade de Código (style e linter)
-. Testes com Pytest
+. Básico de Testes com Pytest
 . Ci/CD
 
 
@@ -134,9 +139,3 @@ Exercicios:
 . API
 . WEB
 . Dados
-
-
----
-
-. Subprocess
-. Sockets
