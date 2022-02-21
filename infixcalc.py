@@ -12,13 +12,13 @@ mul -> *
 div -> /
 
 Uso:
-infixcalc.py sum 5 2
+$ infixcalc.py sum 5 2
 7
 
-infixcalc.py mul 10 5
+$ infixcalc.py mul 10 5
 50
 
-infixcalc.py
+$ infixcalc.py
 operação: sum
 n1: 5
 n2: 4
@@ -27,36 +27,43 @@ n2: 4
 __version__ = "0.1.0"
 
 import sys
-
 arguments = sys.argv[1:]
 
+
+# TODO: Exceptions
 if not arguments:
-    operation = input("Digite a operação:").strip()
+    operation = input("operação:")
     n1 = input("n1:")
-    n2 = input("n1:")
+    n2 = input("n2:")
+    arguments = [operation, n1, n2]
 elif len(arguments) != 3:
     print("Número de argumentos inválidos")
-    print("Ex uso: `sum 5 5`")
+    print("ex: `sum 5 5`")
     sys.exit(1)
-else:
-    operation, n1, n2 = arguments
 
-# TODO: Tratar Exception ValueError
-for num in (n1, n2):
+operation, *nums = arguments
+
+valid_operations = ("sum", "sub", "mul", 'div')
+if operation not in valid_operations:
+    print("Operação inválida")
+    print(valid_operations)
+    sys.exit(1)
+
+validated_nums = []
+for num in nums:
+    # TODO: Repetição while + exceptions
     if not num.replace(".", "").isdigit():
-        print(f"Numero inválido `{num}`")
+        print(f"Numero inválido {num}")
         sys.exit(1)
+    if "." in num:
+        num = float(num)
+    else:
+        num = int(num)
+    validated_nums.append(num)
+    
+n1, n2 = validated_nums
 
-if operation not in ("sum", "sub", "mul", "div"):
-    print("Operação Inválida, escolha entre:")
-    print(operations)
-    sys.exit(1)
-
-# TODO: Escolher entre int e float
-n1 = float(n1)
-n2 = float(n2)
-
-# TODO: Trocar por dict de functions
+# TODO: Usar dict de funcoes
 if operation == "sum":
     result = n1 + n2
 elif operation == "sub":
@@ -66,12 +73,4 @@ elif operation == "mul":
 elif operation == "div":
     result = n1 / n2
 
-print(f"O resultado é {result:.1f}")
-
-
-
-
-
-
-
-
+print(f"O resultado é {result}")

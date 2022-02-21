@@ -64,6 +64,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Casting de inputs (strip, "\n", ints)
   - Ex: Hello World com nome e --lang argument
   - Ex: Calculadora com input
+> dia:21/02
 17. Filesystem
   - Listar filesystem com os e Path
   - Criar pastas e arquivos
@@ -72,7 +73,6 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Calculadora que salva o hostorico em --file 
   - Ex: bloco de anotações
   - Ex: Banco de dados de emails (mkt)
-> dia:21/02
 18. Tratamento de Erros LBYL e EAFP
 - Logging
 19. Algoritmos e lógica
