@@ -75,6 +75,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Banco de dados de emails (mkt)
 18. Tratamento de Erros LBYL e EAFP
 - Logging
+> dia:22/02
 19. Algoritmos e lógica
   - Operações e simbolos
   - Atribuição com expressões PEMDAS
@@ -88,7 +89,6 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Calculadora que repete a operação
   - Ex: Bloco que pergunta se quer continuar
   - Ex: Hello World que permite multiplos nomes
-> dia:22/02
 21. Debugging
     - -i modo interativo
     - pdb
