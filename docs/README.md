@@ -50,25 +50,32 @@ Exercicios: Hello world multi linguas
 17. Sets (conjuntos)
 18. Dicionários
 14. Bonus: Refatorando nosso Hello World com dicionários
+> dia:21/02
 
 Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de aula
 
 ## Day 3
 
-. Stdin e Stdout
-. Leitura de inputs 
+15. Stdin e Stdout
+16. Leitura de inputs 
   - Envvars
   - CLI arguments
   - Terminal (stdin)
   - Casting de inputs (strip, "\n", ints)
-. Filesystem
+  - Ex: Hello World com nome e --lang argument
+  - Ex: Calculadora com input
+17. Filesystem
   - Listar filesystem com os e Path
   - Criar pastas e arquivos
   - Ler arquivos
   - Escrever arquivos
-. Tratamento de Erros LBYL e EAFP
+  - Ex: Calculadora que salva o hostorico em --file 
+  - Ex: bloco de anotações
+  - Ex: Banco de dados de emails (mkt)
+> dia:21/02
+18. Tratamento de Erros LBYL e EAFP
 - Logging
-. Algoritmos e lógica
+19. Algoritmos e lógica
   - Operações e simbolos
   - Atribuição com expressões PEMDAS
   - Truthy and Falsy
@@ -76,8 +83,13 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Condicional Composta
   - Condicionais Inline
   - Python Tutor
-. Repetições for e while
-. Debugging
+  - Pattern Matching (3.10)
+20. Repetições for e while
+  - Ex: Calculadora que repete a operação
+  - Ex: Bloco que pergunta se quer continuar
+  - Ex: Hello World que permite multiplos nomes
+> dia:22/02
+21. Debugging
     - -i modo interativo
     - pdb
     - ipdb
@@ -85,57 +97,86 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
     - debugging no terminal `--until`
     - debugging em caso de erro
 
-exercicios: Number guessing, Calculadora, Sistema de reservas, Aplicativo de anotações,
+exercicios: Number guessing, Calculadora, Aplicativo de anotações,
             Hello World Multi linguas com input e argumentos de cli.
 
+> dia:23/02
 ## Day 4
 
-. Funções builtin uteis
+22. Funções builtin uteis
   - sum, len, vars, min, max, filter, map
-. Funções úteis da biblioteca padrão
-  - pprint, collections, itertools, functools etc
-. Memória e escopo
-. Definindo suas próprias Funções
-  - *
-. decorators (uso)
-. O sistema de imports do Python
-. Organizando o projeto com pacotes e módulos
-. Gerenciamento de dependencias
-. Libs uteis para um projeto Python (dynaconf, black, loguru)
-. Criando um pacote instalável
-. Distribuindo seu projeto no PyPI de testes
-
-Exercicios: 
+23. Funções úteis da biblioteca padrão
+  - random, pprint, collections, itertools, functools, smtplib etc
+  - Ex: Jogo jackpot
+  - Ex: Enviar emails de verdade
+24. Memória e escopo
+> dia:24/02
+25. Definindo suas próprias Funções
+  - Argumentos posicionais, nomeados
+  - Unpacking
+  - Retornos
+  - escopo
+  - Cuidados com argumentos default
+  - Lambda
+  - Ex: Calculadora com dict de funções
+  - Ex: Refatoração de scripts com funções (escola/email/tabuada)
+26. decorators (uso)
+  - Ex: Gravando log de chamadas de função
+> dia:25/02
+27. O sistema de imports do Python
+28. Organizando o projeto com pacotes e módulos
+29. Criando um pacote instalável
+  - semver
+30. Gerenciamento de dependencias
+  - requirements
+  - poetry
+31. Libs uteis para um projeto Python (dynaconf, black, loguru)
+32. Distribuindo seu projeto no PyPI de testes
+  - Ex: Hello World Multi Linguas instalavel com `$ hello`
+ 
+> dia:28/02
 
 ## Day 5
 
-. Qualidade de Código (style e linter)
-. Básico de Testes com Pytest
-. Ci/CD
+33. Qualidade de Código (style e linter)
+34. Básico de Testes com Pytest
+35. Ci/CD
 
+> dia:01/03
 
 ## Day 6
 
-. O que é orientação a objetos e qual problema ela resolve
-. Classes, Atributos e Métodos (instance, class, static) 
-. Encapsulamento (properties e name mangling)
-. Herança
-. Inspeção
-. Type Annotations
-. Dataclasses
-. Pydantic
+36. O que é orientação a objetos e qual problema ela resolve
+37. Classes, Atributos e Métodos (instance, class, static) 
+38. Encapsulamento (properties e name mangling)
+39. PIL
+40. Turtle/trinket
+41. Herança
+  - Ex: Conta Bancaria
+
+> dia:02/03
+
+42. Type Annotations
+43. Dataclasses
+44. Pydantic
 
 ## Day 7
 
-. Integrando com o mundo exterior
-. Bancos de dados
-. Request HTTP (HTML, JSON)
+45. Integrando com o mundo exterior
+46. Bancos de dados
+47. Request HTTP (HTML, JSON)
 
+> dia:03/03
 ## Day 8
 
-. Frameworks
-. GUI
-. CLI
-. API
-. WEB
-. Dados
+48. Frameworks
+49. GUI/TUI
+> dia:04/03
+50. CLI
+> dia:05/03
+51. API
+> dia:06/03
+52. WEB
+> dia:07/03
+53. Dados
+> dia:08/03
