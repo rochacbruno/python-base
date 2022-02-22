@@ -1,0 +1,3 @@
+Minha primeira Nota	geral	Minha nota 1
+Minha Segunda Nota	tech	Python é legal
+Minha terceira Nota	tech	Java também é legal,né?

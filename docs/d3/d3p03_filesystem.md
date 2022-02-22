@@ -260,6 +260,17 @@ com algumas melhorias de sintaxe.
 'Bruno'
 ```
 
+Uma caracteristica interessante do objeto `Path` é que ele permite ser combinado
+com outros objetos do mesmo tipo ou `str` usando `/`
+
+```py
+>>> caminho = Path("pasta1") / "pasta2" / Path("pasta3")
+>>> print(caminho)
+pasta1/pasta2/pasta3
+```
+
+
+
 ## Conclusão
 
 A escolha entre utilizar `os` ou `pathlib` se dá pelo gosto de quem está programando
@@ -271,9 +282,7 @@ lidando na hora de interagir com os objetos file descriptors.
 
 - Salvar o histórico de cálculos da calculadora infixcalc.py em um arquivo informado no
   parametro `--logfile`
+- Alterar o script `interpolacao.py` para ler emails de um arquivo `emails.txt` ao enviar os emails.
 - Criar um bloco de anotações `python3 note.py write` que pergunta `titulo`, `tag`, `texto`
   salva em uma nova linha de um arquivo chamado `notas.txt` separados por `tab` (tsv)
-  ao executar com `python3 note.py read` exibe todas as notas linha a linha
-  permitindo filtrar com `--tag=geral`
-- Alterar o script `interpolacao.py` para ler emails de um arquivo `emails.txt` ao
-  enviar os emails.
+  ao executar com `python3 note.py read` exibe todas as notas linha a linha permitindo filtrar com `--tag=geral`

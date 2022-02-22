@@ -73,9 +73,9 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Calculadora que salva o hostorico em --file 
   - Ex: bloco de anotações
   - Ex: Banco de dados de emails (mkt)
+> dia:22/02
 18. Tratamento de Erros LBYL e EAFP
 - Logging
-> dia:22/02
 19. Algoritmos e lógica
   - Operações e simbolos
   - Atribuição com expressões PEMDAS
@@ -89,6 +89,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Calculadora que repete a operação
   - Ex: Bloco que pergunta se quer continuar
   - Ex: Hello World que permite multiplos nomes
+> dia:23/02
 21. Debugging
     - -i modo interativo
     - pdb
@@ -99,8 +100,6 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
 
 exercicios: Number guessing, Calculadora, Aplicativo de anotações,
             Hello World Multi linguas com input e argumentos de cli.
-
-> dia:23/02
 ## Day 4
 
 22. Funções builtin uteis
