@@ -76,6 +76,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
 > dia:22/02
 18. Tratamento de Erros LBYL e EAFP
 - Logging
+> dia:23/02
 19. Algoritmos e lógica
   - Operações e simbolos
   - Atribuição com expressões PEMDAS
@@ -89,7 +90,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Ex: Calculadora que repete a operação
   - Ex: Bloco que pergunta se quer continuar
   - Ex: Hello World que permite multiplos nomes
-> dia:23/02
+> dia:24/02
 21. Debugging
     - -i modo interativo
     - pdb
@@ -100,6 +101,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
 
 exercicios: Number guessing, Calculadora, Aplicativo de anotações,
             Hello World Multi linguas com input e argumentos de cli.
+> dia:25/02
 ## Day 4
 
 22. Funções builtin uteis
@@ -108,8 +110,8 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - random, pprint, collections, itertools, functools, smtplib etc
   - Ex: Jogo jackpot
   - Ex: Enviar emails de verdade
+> dia:28/02
 24. Memória e escopo
-> dia:24/02
 25. Definindo suas próprias Funções
   - Argumentos posicionais, nomeados
   - Unpacking
@@ -121,7 +123,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - Ex: Refatoração de scripts com funções (escola/email/tabuada)
 26. decorators (uso)
   - Ex: Gravando log de chamadas de função
-> dia:25/02
+> dia:01/03
 27. O sistema de imports do Python
 28. Organizando o projeto com pacotes e módulos
 29. Criando um pacote instalável
@@ -133,7 +135,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 32. Distribuindo seu projeto no PyPI de testes
   - Ex: Hello World Multi Linguas instalavel com `$ hello`
  
-> dia:28/02
+> dia:02/03
 
 ## Day 5
 
@@ -141,7 +143,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 34. Básico de Testes com Pytest
 35. Ci/CD
 
-> dia:01/03
+> dia:03/03
 
 ## Day 6
 
@@ -153,29 +155,30 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 41. Herança
   - Ex: Conta Bancaria
 
-> dia:02/03
+> dia:04/03
 
 42. Type Annotations
 43. Dataclasses
 44. Pydantic
 
+> dia:07/03
 ## Day 7
 
 45. Integrando com o mundo exterior
 46. Bancos de dados
 47. Request HTTP (HTML, JSON)
 
-> dia:03/03
+> dia:08/03
 ## Day 8
 
 48. Frameworks
 49. GUI/TUI
-> dia:04/03
+> dia:09/03
 50. CLI
-> dia:05/03
+> dia:10/03
 51. API
-> dia:06/03
+> dia:11/03
 52. WEB
-> dia:07/03
-53. Dados
-> dia:08/03
+> dia:14/03
+53. Dados (*)
+> dia:15/03

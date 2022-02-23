@@ -31,7 +31,6 @@ import sys
 arguments = sys.argv[1:]
 
 
-# TODO: Exceptions
 if not arguments:
     operation = input("operação:")
     n1 = input("n1:")
@@ -52,7 +51,6 @@ if operation not in valid_operations:
 
 validated_nums = []
 for num in nums:
-    # TODO: Repetição while + exceptions
     if not num.replace(".", "").isdigit():
         print(f"Numero inválido {num}")
         sys.exit(1)
@@ -64,7 +62,7 @@ for num in nums:
     
 n1, n2 = validated_nums
 
-# TODO: Usar dict de funcoes
+
 if operation == "sum":
     result = n1 + n2
 elif operation == "sub":
