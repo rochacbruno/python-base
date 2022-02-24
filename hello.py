@@ -24,17 +24,17 @@ __version__ = "0.1.3"
 __author__ = "Bruno Rocha"
 __license__ = "Unlicense"
 
+import logging
 import os
 import sys
-import logging
 
 log_level = os.getenv("LOG_LEVEL", "WARNING").upper()
 log = logging.Logger("bruno", log_level)
 ch = logging.StreamHandler()
 ch.setLevel(log_level)
 fmt = logging.Formatter(
-    '%(asctime)s  %(name)s  %(levelname)s '
-    'l:%(lineno)d f:%(filename)s: %(message)s'
+    "%(asctime)s  %(name)s  %(levelname)s "
+    "l:%(lineno)d f:%(filename)s: %(message)s"
 )
 ch.setFormatter(fmt)
 log.addHandler(ch)
@@ -48,10 +48,10 @@ for arg in sys.argv[1:]:
         log.error(
             "You need to use `=`, you passed %s, try --key=value: %s",
             arg,
-            str(e)
+            str(e),
         )
         sys.exit(1)
-        
+
     key = key.lstrip("-").strip()
     value = value.strip()
 
@@ -74,11 +74,11 @@ if current_language is None:
 current_language = current_language[:5]
 
 msg = {
-   "en_US": "Hello, World!",
-   "pt_BR": "Olá, Mundo!",
-   "it_IT": "Ciao, Mondo!",
-   "es_ES": "Hola, Mundo!",
-   "fr_FR": "Bonjour, Monde!", 
+    "en_US": "Hello, World!",
+    "pt_BR": "Olá, Mundo!",
+    "it_IT": "Ciao, Mondo!",
+    "es_ES": "Hola, Mundo!",
+    "fr_FR": "Bonjour, Monde!",
 }
 
 
@@ -95,6 +95,4 @@ except KeyError as e:
     print(f"Language is invalid, choose from: {list(msg.keys())}")
     sys.exit(1)
 
-print(
-    message * int(arguments["count"])
-)
+print(message * int(arguments["count"]))

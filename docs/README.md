@@ -76,10 +76,14 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
 > dia:22/02
 18. Tratamento de Erros LBYL e EAFP
 - Logging
+ - '%(asctime)s  %(name)s  %(levelname)s: %(message)s'
 > dia:23/02
 19. Algoritmos e lógica
+      - intruções logicas (sair de casa e ir ate a padaria)
   - Operações e simbolos
+      - help(symbols)
   - Atribuição com expressões PEMDAS
+      - ()
   - Truthy and Falsy
   - Condicional
   - Condicional Composta
@@ -172,7 +176,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 ## Day 8
 
 48. Frameworks
-49. GUI/TUI
+49. GUI/TUI/Pygame
 > dia:09/03
 50. CLI
 > dia:10/03
