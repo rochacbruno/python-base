@@ -26,6 +26,9 @@ Premissa: Padaria da Esquina abre fds: até 12h, semana até 19h, feriado (excet
 
 - Se -> If (condicao)
 - Senão -> elif (condicao) / else
+
+## Operadores lógicos
+
 - E -> and (condicao composta com porta lógica AND)
 - OU -> or (condicao composta com porta lógica OR)
 - NÃO -> not (sinal de negação)

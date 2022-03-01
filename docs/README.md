@@ -79,43 +79,37 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
  - '%(asctime)s  %(name)s  %(levelname)s: %(message)s'
 > dia:23/02
 19. Algoritmos e lógica
-      - intruções logicas (sair de casa e ir ate a padaria)
   - Operações e simbolos
-      - help(symbols)
-  - Atribuição com expressões PEMDAS
-      - ()
   - Truthy and Falsy
   - Condicional
   - Condicional Composta
   - Condicionais Inline
   - Python Tutor
-  - Pattern Matching (3.10)
+> dia:24/02
 20. Repetições for e while
+  - List Comprehension
+  - Geradores
+  - For
+  - While
   - Ex: Calculadora que repete a operação
   - Ex: Bloco que pergunta se quer continuar
   - Ex: Hello World que permite multiplos nomes
-> dia:24/02
-21. Debugging
-    - -i modo interativo
-    - pdb
-    - ipdb
-    - debugging visual (pudb, vscode)
-    - debugging no terminal `--until`
-    - debugging em caso de erro
+> dia:25/02
 
 exercicios: Number guessing, Calculadora, Aplicativo de anotações,
             Hello World Multi linguas com input e argumentos de cli.
-> dia:25/02
+
+
 ## Day 4
 
 22. Funções builtin uteis
   - sum, len, vars, min, max, filter, map
 23. Funções úteis da biblioteca padrão
-  - random, pprint, collections, itertools, functools, smtplib etc
+  - random, pprint, itertools, functools, smtplib etc
   - Ex: Jogo jackpot
   - Ex: Enviar emails de verdade
+  - Pattern Matching (3.10)
 > dia:28/02
-24. Memória e escopo
 25. Definindo suas próprias Funções
   - Argumentos posicionais, nomeados
   - Unpacking
@@ -127,62 +121,69 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - Ex: Refatoração de scripts com funções (escola/email/tabuada)
 26. decorators (uso)
   - Ex: Gravando log de chamadas de função
-> dia:01/03
-27. O sistema de imports do Python
-28. Organizando o projeto com pacotes e módulos
-29. Criando um pacote instalável
+> dia:02/03
+27. Debugging
+    - -i modo interativo
+    - pdb
+    - ipdb
+    - debugging visual (pudb, vscode)
+    - debugging no terminal `--until`
+    - debugging em caso de erro
+28. O sistema de imports do Python
+29. Organizando o projeto com pacotes e módulos
+30. Criando um pacote instalável
   - semver
-30. Gerenciamento de dependencias
+31. Gerenciamento de dependencias
   - requirements
   - poetry
-31. Libs uteis para um projeto Python (dynaconf, black, loguru)
-32. Distribuindo seu projeto no PyPI de testes
+32. Libs uteis para um projeto Python (dynaconf, black, loguru)
+33. Distribuindo seu projeto no PyPI de testes
   - Ex: Hello World Multi Linguas instalavel com `$ hello`
  
-> dia:02/03
+> dia:03/03
 
 ## Day 5
 
-33. Qualidade de Código (style e linter)
-34. Básico de Testes com Pytest
-35. Ci/CD
-
-> dia:03/03
-
-## Day 6
-
-36. O que é orientação a objetos e qual problema ela resolve
-37. Classes, Atributos e Métodos (instance, class, static) 
-38. Encapsulamento (properties e name mangling)
-39. PIL
-40. Turtle/trinket
-41. Herança
-  - Ex: Conta Bancaria
+34. Qualidade de Código (style e linter)
+35. Básico de Testes com Pytest
+36. Ci/CD
 
 > dia:04/03
 
-42. Type Annotations
-43. Dataclasses
-44. Pydantic
+## Day 6
+
+37. O que é orientação a objetos e qual problema ela resolve
+38. Classes, Atributos e Métodos (instance, class, static) 
+39. Encapsulamento (properties e name mangling)
+40. PIL
+41. Turtle/trinket
+42. Herança
+  - Ex: Conta Bancaria
 
 > dia:07/03
-## Day 7
 
-45. Integrando com o mundo exterior
-46. Bancos de dados
-47. Request HTTP (HTML, JSON)
+43. Type Annotations
+44. Dataclasses
+45. Pydantic
 
 > dia:08/03
+## Day 7
+
+46. Integrando com o mundo exterior
+47. Bancos de dados
+48. Request HTTP (HTML, JSON)
+
+> dia:09/03
 ## Day 8
 
-48. Frameworks
-49. GUI/TUI/Pygame
-> dia:09/03
-50. CLI
+49. Frameworks
+50. GUI/TUI/Pygame
 > dia:10/03
-51. API
+51. CLI
 > dia:11/03
-52. WEB
+52. API
 > dia:14/03
-53. Dados (*)
+53. WEB
 > dia:15/03
+54. Dados (*)
+> dia:16/03
