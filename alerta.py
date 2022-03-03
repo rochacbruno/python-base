@@ -30,7 +30,9 @@ info = {"temperatura": None, "umidade": None}
 while True:
     # condicao de parada
     # o dicionário está completamente preenchido
-    if all(info.values()):  # [None, None]
+    info_size = len(info.values())
+    filled_size = len([value for value in info.values() if value is not None])
+    if info_size == filled_size:
         break  # para o while
 
     for key in info.keys():  # ["temperatura", "umidade"]

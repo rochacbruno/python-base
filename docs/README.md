@@ -109,7 +109,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - Ex: Jogo jackpot
   - Ex: Enviar emails de verdade
   - Pattern Matching (3.10)
-> dia:28/02
+> dia:03/03
 25. Definindo suas próprias Funções
   - Argumentos posicionais, nomeados
   - Unpacking
@@ -121,7 +121,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - Ex: Refatoração de scripts com funções (escola/email/tabuada)
 26. decorators (uso)
   - Ex: Gravando log de chamadas de função
-> dia:02/03
+> dia:04/03
 27. Debugging
     - -i modo interativo
     - pdb
@@ -140,7 +140,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 33. Distribuindo seu projeto no PyPI de testes
   - Ex: Hello World Multi Linguas instalavel com `$ hello`
  
-> dia:03/03
+> dia:07/03
 
 ## Day 5
 
@@ -148,7 +148,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 35. Básico de Testes com Pytest
 36. Ci/CD
 
-> dia:04/03
+> dia:08/03
 
 ## Day 6
 
@@ -160,30 +160,30 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 42. Herança
   - Ex: Conta Bancaria
 
-> dia:07/03
+> dia:09/03
 
 43. Type Annotations
 44. Dataclasses
 45. Pydantic
 
-> dia:08/03
+> dia:10/03
 ## Day 7
 
 46. Integrando com o mundo exterior
 47. Bancos de dados
 48. Request HTTP (HTML, JSON)
 
-> dia:09/03
+> dia:11/03
 ## Day 8
 
 49. Frameworks
 50. GUI/TUI/Pygame
-> dia:10/03
-51. CLI
-> dia:11/03
-52. API
 > dia:14/03
-53. WEB
+51. CLI
 > dia:15/03
-54. Dados (*)
+52. API
 > dia:16/03
+53. WEB
+> dia:17/03
+54. Dados (*)
+> dia:18/03
