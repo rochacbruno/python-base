@@ -108,7 +108,6 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - random, pprint, itertools, functools, smtplib etc
   - Ex: Jogo jackpot
   - Ex: Enviar emails de verdade
-  - Pattern Matching (3.10)
 > dia:03/03
 25. Definindo suas próprias Funções
   - Argumentos posicionais, nomeados
@@ -165,6 +164,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 43. Type Annotations
 44. Dataclasses
 45. Pydantic
+  - Pattern Matching (3.10)
 
 > dia:10/03
 ## Day 7
