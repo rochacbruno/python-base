@@ -1,6 +1,8 @@
 ## 3. Funções
 
-Função, na matemática é a uma estrutura que recebe em seu input um conjunto de dados (dominio), aplica uma fórmula ou processo com esses dados e retorna um resultado (contradominio).
+Função, na matemática é a uma estrutura que relaciona um conjunto A (dominio) a um conjunto B (contradominio) e seu subconjunto (imagem).
+
+A função da programação é um pouco diferente mas opera de maneira bastante similar, a função na programação recebe um input com um conjunto de dados (dominio) e opera este conjunto com relação ao seu resultado de retorno (contradominio).
 
 ```text
 f(x) = 5 * (x / 2)

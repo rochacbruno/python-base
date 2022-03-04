@@ -118,9 +118,9 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - Lambda
   - Ex: Calculadora com dict de funções
   - Ex: Refatoração de scripts com funções (escola/email/tabuada)
+> dia:04/03
 26. decorators (uso)
   - Ex: Gravando log de chamadas de função
-> dia:04/03
 27. Debugging
     - -i modo interativo
     - pdb
