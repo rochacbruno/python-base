@@ -86,7 +86,7 @@ Exercicios: Tabuada, Interpolação de textos, Interseção de alunos em sala de
   - Condicionais Inline
   - Python Tutor
 > dia:24/02
-20. Repetições for e while
+20. Repetições for e while  TODO: texto no day3
   - List Comprehension
   - Geradores
   - For
@@ -116,11 +116,11 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
   - escopo
   - Cuidados com argumentos default
   - Lambda
+> dia:04/03
   - Ex: Calculadora com dict de funções
   - Ex: Refatoração de scripts com funções (escola/email/tabuada)
-> dia:04/03
-26. decorators (uso)
-  - Ex: Gravando log de chamadas de função
+> dia:07/03
+
 27. Debugging
     - -i modo interativo
     - pdb
@@ -129,6 +129,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
     - debugging no terminal `--until`
     - debugging em caso de erro
 28. O sistema de imports do Python
+
 29. Organizando o projeto com pacotes e módulos
 30. Criando um pacote instalável
   - semver
@@ -138,12 +139,12 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 32. Libs uteis para um projeto Python (dynaconf, black, loguru)
 33. Distribuindo seu projeto no PyPI de testes
   - Ex: Hello World Multi Linguas instalavel com `$ hello`
- 
-> dia:07/03
 
 ## Day 5
 
 34. Qualidade de Código (style e linter)
+26. decorators (uso)
+  - Ex: Gravando log de chamadas de função
 35. Básico de Testes com Pytest
 36. Ci/CD
 
@@ -164,7 +165,6 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 43. Type Annotations
 44. Dataclasses
 45. Pydantic
-  - Pattern Matching (3.10)
 
 > dia:10/03
 ## Day 7
@@ -178,6 +178,7 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 
 49. Frameworks
 50. GUI/TUI/Pygame
+  ex: clock (recursao)
 > dia:14/03
 51. CLI
 > dia:15/03
@@ -185,5 +186,9 @@ exercicios: Number guessing, Calculadora, Aplicativo de anotações,
 > dia:16/03
 53. WEB
 > dia:17/03
-54. Dados (*)
-> dia:18/03
+
+
+### NOTES
+
+- walrus (3.8)
+- Pattern Matching (3.10)

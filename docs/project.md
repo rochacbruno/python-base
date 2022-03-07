@@ -53,7 +53,7 @@ Epic: Movimentação
     - Pacote e módulos
         - `explicar o __init__.py`
         - explicar sys.modules e os tipos de import
-    - Build files (setup.py, MANIFEST.in, Makefile)
+    - Build files (setup.py, MANIFEST.in, Makefile (clean, install, test))
     - Requirements
     - Executavel (entrypoint e `__main__`)
 - `dundie/cli.py` - Começar com `sys.argv` depois explicar `decorators` e mostrar `click` (inicio com `dummy data`)

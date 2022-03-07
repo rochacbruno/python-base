@@ -1,4 +1,4 @@
-## 3. Funções
+# Criando Funções
 
 Função, na matemática é a uma estrutura que relaciona um conjunto A (dominio) a um conjunto B (contradominio) e seu subconjunto (imagem).
 
@@ -58,6 +58,10 @@ triangulos = [
 ]
 for t in triangulos:
     print("A área do triângulo é: ", heron(t[0], t[1], t[2]))
+
+# Ou usando unpacking
+for t in triangulos:
+    print("A área do triângulo é: ", heron(*t))
 ```
 
 ### Anatomia de uma função

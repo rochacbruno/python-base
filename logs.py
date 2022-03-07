@@ -5,14 +5,13 @@ import logging
 from logging import handlers
 
 # BOILERPLATE
-# TODO: usar função
-# TODO: usar lib (loguru)
+# TODO: Mover para um modulo de utilidades
 log_level = os.getenv("LOG_LEVEL", "WARNING").upper()
 log = logging.Logger("bruno", log_level)
 #ch = logging.StreamHandler()  # Console/terminal/stderr
 #ch.setLevel(log_level)
 fh = handlers.RotatingFileHandler(
-   "meulog.log", 
+   "meulog.log",
    maxBytes=300, # 10**6
    backupCount=10,
 )

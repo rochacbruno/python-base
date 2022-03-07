@@ -1,4 +1,4 @@
-## Qual o motivo de usarmos funções?
+# Qual o motivo de usarmos funções?
 
 O primeiro motivo nós já vimos, que é a aplicação de funções matemáticas de acordo com suas respectivas fórmulas.
 

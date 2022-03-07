@@ -228,7 +228,7 @@ E experimente substituir o valor de `LANG` para testar a funcionalidade do scrip
 Pode também persistir o valor exportando a variável para o ambiente antes de executar:
 
 ```bash
-LANG=fr_FR
+export LANG=fr_FR
 python3 hello.py
 ```
 

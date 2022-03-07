@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Hello World Multi Linguas.
 
-Dependendo da lingua configurada no ambiente o programa exibe a mensagem 
+Dependendo da lingua configurada no ambiente o programa exibe a mensagem
 correspondente.
 
 Como usar:
@@ -65,7 +65,6 @@ for arg in sys.argv[1:]:
 current_language = arguments["lang"]
 
 if current_language is None:
-    # TODO: Usar repetição
     if "LANG" in os.environ:
         current_language = os.getenv("LANG")
     else:
