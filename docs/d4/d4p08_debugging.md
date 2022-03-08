@@ -281,7 +281,7 @@ Para sair do debugger utilize `q` ou `ctrl + C`
 Para executar até uma determinada linha:
 
 ```bash
-$ python -m pdb -c "until 16" tembug.py 
+$ python -m pdb -c "until 12" tembug.py 
 > /home/rochacbruno/Projects/python-base/tembug.py(16)<module>()
 -> print(repete_vogal("banana"))
 (Pdb) 
@@ -322,6 +322,26 @@ Running 'cont' or 'step' will restart the program
 'banana'
 ```
 
+## Breakpoints explicitos
+
+Em qualquer linha de código onde deseja que o debugger pare a execução:
+
+```py
+import pdb;pdb.set_trace()
+```
+
+ou
+
+```py
+__import__("pdb").set_trace()
+```
+
+ou a partir do Python 3.7
+
+```py
+breakpoint()
+```
+
 ## Variações do protocolo pdb
 
 ### ipdb
@@ -353,6 +373,19 @@ In [2]: exit
 ipdb>
 ```
 
+É possível configurar o `ipdb` como debugger default para o Python através de uma variável de ambiente:
+
+```bash
+export PYTHONBREAKPOINT=ipdb.set_trace                 
+ 
+❯ python tembug.py         
+> /home/rochacbruno/Projects/python-base/tembug.py(6)repete_vogal()
+      5         breakpoint()
+----> 6         if letter.lower() in "aeiouãõâôêéáíó":
+      7             final_word = letter * 2
+ipdb>
+```
+
 ### Debugger visual no terminal 
 
 `pip install pudb`
@@ -368,3 +401,43 @@ python -m pudb tembug.py
 O VSCode também tem um debugger integrado que permite a interação visual e através do terminal.
 
 ![](./imgs/vscodepdb.png)
+
+
+## E afinal onde estava o bug?
+
+Percebi que no vídeo não solucionamos o bug, e não tem problema pois a intenção era justamente aprender a usar as ferramentas de debugging.
+
+Mas o erro está dentro do loop for.
+
+Código errado:
+
+```py
+def repete_vogal(word):
+    """Retorna a palavra com as vogais repetidas."""
+    final_word = ""
+    for letter in word:
+        if letter.lower() in "aeiouãõâôêéáíó":
+            final_word = letter * 2  # <- Aqui tem que ser `+=`
+        else:
+            final_word = letter # <- Aqui tem que ser `+=`
+    return final_word
+
+print(repete_vogal("banana"))
+```
+
+Código correto
+
+```py
+def repete_vogal(word):
+    """Retorna a palavra com as vogais repetidas."""
+    final_word = ""
+    for letter in word:
+        if letter.lower() in "aeiouãõâôêéáíó":
+            final_word += letter * 2  
+        else:
+            final_word += letter
+    return final_word
+
+print(repete_vogal("banana"))
+```
+
