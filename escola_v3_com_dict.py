@@ -6,6 +6,13 @@ que frequentas cada uma das atividades.
 """
 __version__ = "0.1.1"
 
+
+##############################################
+#      ATENçÃO: MODIFIQUE ESSE CÓDIGO!       #
+#   Tente utilizar dicionários               #
+##############################################
+
+
 # Dados
 sala1 = ["Erik", "Maia", "Gustavo", "Manuel", "Sofia", "Joana"]
 sala2 = ["Joao", "Antonio", "Carlos", "Maria", "Isolda"]
@@ -15,8 +22,8 @@ aula_musica = ["Erik", "Carlos", "Maria"]
 aula_danca = ["Gustavo", "Sofia", "Joana", "Antonio"]
 
 atividades = [
-    ("Inglês", aula_ingles), 
-    ("Música", aula_musica), 
+    ("Inglês", aula_ingles),
+    ("Música", aula_musica),
     ("Dança", aula_danca),
 ]
 

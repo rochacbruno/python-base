@@ -3,9 +3,10 @@ def repete_vogal(word):
     final_word = ""
     for letter in word:
         if letter.lower() in "aeiouãõâôêéáíó":
-            final_word = letter * 2
+            breakpoint()
+            final_word = letter * 2  # HINT
         else:
-            final_word = letter
+            final_word = letter  # hint
     return final_word
 
 

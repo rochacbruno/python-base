@@ -1,4 +1,3 @@
-
 def welcome():
     print("Welcome to the test.")
     input("When you are ready press enter.")

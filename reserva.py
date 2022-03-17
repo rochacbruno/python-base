@@ -69,6 +69,8 @@ if len(ocupados) == len(quartos):
 
 nome_cliente = input("Qual é o seu nome:").strip()
 print()
+
+# TODO: Usar rich.Table
 print("Lista de quartos")
 print()
 head = ["Número", "Nome do Quarto", "Preço", "Disponível"]
@@ -78,8 +80,7 @@ for num_quarto, dados_quarto in quartos.items():
     preco = dados_quarto["preco"]
     disponivel = "⛔" if not dados_quarto["disponivel"] else "👍"
     print(
-        f"{num_quarto:<6} - {nome_quarto:<14} - "
-        f"R$ {preco:<9.2f} - {disponivel:<10}"
+        f"{num_quarto:<6} - {nome_quarto:<14} - " f"R$ {preco:<9.2f} - {disponivel:<10}"
     )
 
 print("-" * 52)

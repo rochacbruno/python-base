@@ -24,14 +24,10 @@ import logging
 log = logging.Logger("alerta")
 
 
-# TODO: Mover para módulo de utilidades.
-
 def is_completely_filled(dict_of_inputs):
     """Returns a boolean telling if a dict is completely filled."""
     info_size = len(dict_of_inputs)
-    filled_size = len(
-        [value for value in dict_of_inputs.values() if value is not None]
-    )
+    filled_size = len([value for value in dict_of_inputs.values() if value is not None])
     return info_size == filled_size
 
 

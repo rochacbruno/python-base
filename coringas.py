@@ -1,4 +1,3 @@
-
 # SOLID - Single REsponsibility
 def funcao(*args, timeout=10, **options):
     for item in args:

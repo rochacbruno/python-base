@@ -21,7 +21,7 @@ dados = {
 }
 dados = {}
 for line in open("post.txt"):
-    if ':' in line:
+    if ":" in line:
         key, valor = line.split(":")
         dados[key] = valor.strip()
 

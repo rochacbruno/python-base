@@ -46,7 +46,7 @@ valid_operations = {
 path = os.curdir
 filepath = os.path.join(path, "infixcalc.log")
 timestamp = datetime.now().isoformat()
-user = os.getenv('USER', 'anonymous')
+user = os.getenv("USER", "anonymous")
 
 
 while True:
@@ -91,9 +91,7 @@ while True:
 
     try:
         with open(filepath, "a") as log:
-            log.write(
-                f"{timestamp} - {user} - {operation},{n1},{n2} = {result}\n"
-            )
+            log.write(f"{timestamp} - {user} - {operation},{n1},{n2} = {result}\n")
     except PermissionError as e:
         print(str(e))
         sys.exit(1)

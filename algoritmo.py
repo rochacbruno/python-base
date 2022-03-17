@@ -9,7 +9,7 @@ chovendo = True
 frio = True
 nevando = True
 semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"]
-feriado = ["Quarta"]
+feriados = ["Quarta"]
 horario_padaria = {"semana": 19, "fds": 12}
 
 # Algoritmo

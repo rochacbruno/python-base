@@ -73,6 +73,7 @@ print(resto)
 
 # Passagem de argumentos com desempacotamento
 
+
 def soma(n1, n2):
     """Faz a soma de 2 numeros."""
     return n1 + n2
@@ -108,6 +109,3 @@ for item in lista_de_valores_para_somar:
 
 
 ###############################
-
-
-1

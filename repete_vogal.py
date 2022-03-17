@@ -17,7 +17,7 @@ VOGAIS = "aeiouãõâôêéáíó"  # constante
 
 words = []  # acumullator/acumulador
 while True:
-    word = input('Digite uma palavra (ou enter para sair):').strip()
+    word = input("Digite uma palavra (ou enter para sair):").strip()
     if not word:  # condição de parada
         break
 

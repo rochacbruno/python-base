@@ -3,7 +3,7 @@
 
 $ notes.py new "Minha Nota"
 tag: tech
-text: 
+text:
 Anotacao geral sobre carreira de tecnologia
 
 $ notes.py 1 tech
@@ -64,4 +64,3 @@ while True:
     cont = input(f"Quer continuar {arguments[0]} notas? [N/y]").strip().lower()
     if cont != "y":
         break
-        
