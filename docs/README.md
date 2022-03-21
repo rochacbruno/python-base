@@ -138,8 +138,6 @@ seguindo um modelo que é um pouco diferente do tradicional e muito flexivel, ne
 falaremos sobre toda a base da orientação a objetos com Python.
 
 52. O que é orientação a objetos (no Python) e qual problema ela resolve
-    - conta bancaria com funcoes e dicts
-    - triangulo 3 lados com claculo de area em funcao e dict
 53. Classes, Atributos e Métodos
 54. Python Data Model e Protocolos
 55. Herança, Composição, Encapsulamento
