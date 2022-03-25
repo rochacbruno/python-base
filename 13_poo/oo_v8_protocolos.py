@@ -176,3 +176,12 @@ print(rgb["azul"])
 
 # Mais protocolos
 # https://docs.python.org/3/library/collections.abc.html#collections-abstract-base-classes
+
+
+class Thing:
+    ...
+
+
+thing = Thing()
+print(thing)  # __repr__ Representable
+thing == 1  # __eq__ Equality Comparable

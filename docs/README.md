@@ -140,15 +140,15 @@ falaremos sobre toda a base da orientação a objetos com Python.
 52. O que é orientação a objetos (no Python) e qual problema ela resolve
 53. Classes, Atributos e Métodos
 54. Python Data Model e Protocolos
-55. Herança, Composição, Encapsulamento
-56. Dataclasses
-57. Aplicando O.O em nosso projeto
-    SOLID
+55. Herança, Encapsulamento
+56. Type Annotations e Dataclasses
+57. Aplicando O.O em nosso projeto (SOLID)
 58. Bibliotecas úteis orientadas a Objetos (Pydantic)
-59. Type Annotations
+59. Composição: Motor, Direção, Carro
 60. Structural Pattern Matching
 
 Duração: TBD
+
 ## Day 7 - Consumindo e armazenando dados.
 
 Na maior parte dos programas sempre teremos que carregar e armazenar dados e para isso
