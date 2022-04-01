@@ -19,8 +19,11 @@ produtos = {"1": Produto("Maça", 4.5), "2": Produto("Melancia", 6.3)}
 
 print("Olá cliente, boas vindas à quitanda!")
 print("Estes são os produtos disponíveis:")
+
+# ("1", Produto(...))
 for codigo, produto in produtos.items():
     print(f"{codigo} -> {produto.nome} - R$ {produto.valor:.2f}")
+
 
 
 class Item:
@@ -32,6 +35,8 @@ class Item:
 class Compra:
     def __init__(self, cliente, items=None):
         self.cliente = cliente
+        # if items is None:
+        #     self.items = []
         self.items = items or []
 
     @property
