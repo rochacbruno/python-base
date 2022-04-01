@@ -2,12 +2,12 @@
 
 Um resumo dos treinamentos  contidos no Python Expert.
 
-1. **BASE** - Conceitos fundamentais que formam a base para iniciar com Python, 
-   neste treinamento além de toda a base fundamental teórica tem muito execício prático 
-   e a criação de um  projeto de backend em terminal completo com interfaces, banco de dados 
+1. **BASE** - Conceitos fundamentais que formam a base para iniciar com Python,
+   neste treinamento além de toda a base fundamental teórica tem muito execício prático
+   e a criação de um  projeto de backend em terminal completo com interfaces, banco de dados
    e testes.
 
-2. WEB - Python focado no desenvolvimento de backend para web e APIs usando os 
+2. WEB - Python focado no desenvolvimento de backend para web e APIs usando os
    principais frameworks do mercado como Django, Flask e FastAPI, neste treinamento
    criaremos um mesmo projeto cobrindo as principais necessidades do mercado web e usando
    os 3 principais frameworks.
@@ -17,7 +17,7 @@ Um resumo dos treinamentos  contidos no Python Expert.
    sockets, subprocessos, code coverage, comunicação com cloud providers e módulos Ansible, análise de performance e criação de wrapers para APIs.
 
 4. Engineer - Para quem quer ir além da base, neste módulo vamos
-   explorar conceitos avançados de Python, async, metaprogramação, descritores, 
+   explorar conceitos avançados de Python, async, metaprogramação, descritores,
    criaremos nosso próprio framework e falaremos sobre inspeção de objetos e hooks.
 
 
@@ -27,10 +27,10 @@ Você está iniciando o Python BASE que é o primeiro passo para começar
 a sua carreira em desenvolvimento, este treinamento é pensado para
 pessoas que nunca tiveram contato com programação antes, ou que já
 possuem algum conhecimento em alguma outra linguagem e precisam aprender
-Python e vamos desde a teoria base do que é programação, instalação e configuração do ambiente, 
+Python e vamos desde a teoria base do que é programação, instalação e configuração do ambiente,
 escolha de um editor de código e criação do seu primeiro script até
 a criação de vários pequenos programas que vão abordar as principais
-funcionalidades do Python e vamos também criar um projeto completo do zero com as 
+funcionalidades do Python e vamos também criar um projeto completo do zero com as
 melhores práticas do mercado.
 
 Duração estimada em horas: 60h
@@ -43,7 +43,7 @@ Duração estimada em horas: 60h
 Neste capítulo você terá uma introdução ao treinamento e aos conceitos básicos de programação
 e a linguagem Python, também aprenderá como instalar e preparar um ambiente para programar.
 
-1. Introdução 
+1. Introdução
 2. Programação e Linguagens
 3. Como é organizada a plataforma Python
 4. Instalação e preparação do ambiente
@@ -60,7 +60,7 @@ Duração: 5h
 Neste capítulo você conhecerá os tipos e estruturas de dados do Python e execicios
 práticos para entender como manipulamos informações.
 
-10. Protocolos e Tipos de dados primitivos 
+10. Protocolos e Tipos de dados primitivos
 11. Float, Bool, None
 12. Textos, Caracteres e Strings
 13. Formatação de texto
@@ -86,9 +86,9 @@ processar e persistir a informação em arquivos.
 25. Tratamento de Erros LBYL e EAFP
 26. Logging - Formatando e gravando logs
 27. Algoritmos e lógica - Condicionais, Operadores compostos
-28. Condicionais ternárias e inline 
+28. Condicionais ternárias e inline
 29. Repetições com for, while e comprehensions.
-30. Exercicio: Sistema de Reservas com iterators, textos, inputs e arquivos de texto. 
+30. Exercicio: Sistema de Reservas com iterators, textos, inputs e arquivos de texto.
 
 Duração: 10h
 
@@ -104,7 +104,7 @@ a criar seu próprio projeto com as melhores práticas.
 34. Anatomia detalhada de funções - assinatura, argumentos, retornos
 35. Escopos e namespaces e argumentos coringas
 36. Funções lambda
-37. Exercicio com lambda, recursão e introdução a programação funcional 
+37. Exercicio com lambda, recursão e introdução a programação funcional
 38. Debugging - Técnicas e ferramentas para encontrar erros.
 39. O Sistema de imports do Python
 40. Criando um repositótio para seu primeiro projeto e configurando o VSCode
@@ -137,20 +137,18 @@ Uma das principais caracteristicas da linguagem Python é a aplicação da Orien
 seguindo um modelo que é um pouco diferente do tradicional e muito flexivel, neste capítulo
 falaremos sobre toda a base da orientação a objetos com Python.
 
-52. O que é orientação a objetos (no Python) e qual problema ela resolve
-    - conta bancaria com funcoes e dicts
-    - triangulo 3 lados com claculo de area em funcao e dict
-53. Classes, Atributos e Métodos
-54. Python Data Model e Protocolos
-55. Herança, Composição, Encapsulamento
-56. Dataclasses
-57. Aplicando O.O em nosso projeto
-    SOLID
-58. Bibliotecas úteis orientadas a Objetos (Pydantic)
-59. Type Annotations
+52. Os paradigmas de programação
+53. Introdução a Orientação a Objetos
+54. Inicialização de instâncias
+55. Os 4 pilares da O.O: Abstração, Herança, Polimorfismo, Encapsulamento
+56. Encapsulamento com properties
+57. Python Data Model e Protocolos
+58. Python Moderno, Type Annotations e Dataclasses
+59. Dataclass abstrata, Enums, field e super()
 60. Structural Pattern Matching
 
 Duração: TBD
+
 ## Day 7 - Consumindo e armazenando dados.
 
 Na maior parte dos programas sempre teremos que carregar e armazenar dados e para isso
@@ -166,9 +164,9 @@ Duração: TBD
 
 ## Day 8 - Demonstrações
 
-Nesta última parte do treinamento a intenção é fazer uma demonstração bastante breve a 
+Nesta última parte do treinamento a intenção é fazer uma demonstração bastante breve a
 respeito das ferramentas e frameworks principais do mercado, o formato não será de aula
-mas sim de mão na massa, seguindo o mesmo projeto desenvolvido no treinamento vamos 
+mas sim de mão na massa, seguindo o mesmo projeto desenvolvido no treinamento vamos
 adicionar interfaces Gráfica (GUI), 2D (Pygame), terminal (TUI), web (html) e API (REST).
 
 66. Interface Gráfica para Desktop - Demonstração com Tk e Pysimplegui
