@@ -154,11 +154,14 @@ Duração: TBD
 Na maior parte dos programas sempre teremos que carregar e armazenar dados e para isso
 precisamos aprender a usar bancos de dados SQL e consultar APIs.
 
-61. Introdução a Bancos de dados SQL
-62. Modelagem de banco de dados com ORM
-63. Aplicando um ORM em nosso projeto
-64. Consumindo APIs REST
-65. Serialização e De-serialização
+61. Modelangem de dados com dataclasses e Pydantic
+62. Prova de conceito de um ORM
+63. Introdução a SQL e SQLite
+64. SQL Alchemy
+65. SQL Model
+66. Convertendo software legado para SQL
+67. Database Migrations e Consumindo API Rest
+68. Finalização do Projeto e desafios
 
 Duração: TBD
 
@@ -169,10 +172,10 @@ respeito das ferramentas e frameworks principais do mercado, o formato não ser�
 mas sim de mão na massa, seguindo o mesmo projeto desenvolvido no treinamento vamos
 adicionar interfaces Gráfica (GUI), 2D (Pygame), terminal (TUI), web (html) e API (REST).
 
-66. Interface Gráfica para Desktop - Demonstração com Tk e Pysimplegui
-67. Interface 2D para games - Demonstração com Pygame
-68. Interface Gráfica para Terminal - Demonstração com Textual (game)
-69. Interface web com html - Demonstração com Flask
-70. Interface API com REST/Json - Demonstração com FastAPI
+69. Interface Gráfica para Desktop - Demonstração com Tk e Pysimplegui
+70. Interface 2D para games - Demonstração com Pygame
+71. Interface Gráfica para Terminal - Demonstração com Textual (game)
+72. Interface web com html - Demonstração com Flask
+73. Interface API com REST/Json - Demonstração com FastAPI
 
 Duração: TBD
