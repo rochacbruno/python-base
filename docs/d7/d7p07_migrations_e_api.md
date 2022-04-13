@@ -331,10 +331,11 @@ def read(....):
 
 Agora podemos melhorar a formatação do campo no `cli.py`
 
-```
+```py
 def show(...):
     ...
     for person in result:
         person["value"] = f"{person['value']:.2f}"
+        person["balance"] = f"{person['balance']:.2f}"
         ...
 ```

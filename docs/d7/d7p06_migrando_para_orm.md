@@ -1,4 +1,4 @@
-# Migrando nosso projeto para usar ORM SQLModel
+# Convertendo nosso projeto para usar ORM SQLModel
 
 > O código no inicio desta aula https://github.com/rochacbruno/dundie-rewards/tree/day7p06
 
