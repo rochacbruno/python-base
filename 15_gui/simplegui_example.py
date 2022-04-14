@@ -13,6 +13,8 @@ layout = [
     [sg.Text("Y"), sg.In(size=(5, 1), enable_events=True, key="y")],
     [sg.Text("", key="result")],
     [sg.Button("Calcula")],
+    [],
+    [sg.Button("Sair")],
 ]
 
 window = sg.Window(title="Calcula", layout=layout, margins=(100, 50))

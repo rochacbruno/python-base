@@ -1,131 +1,180 @@
+import os
 import random
-import pygame
-import pygame.locals as pg
-from typing import Tuple
+import pygame as pg
+import pygame.locals as keys
 
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-GREEN = (60, 220, 0)
-YELLOW = (255, 240, 60)
-GRAY = (50, 50, 50)
+# Constantes
+DIR = os.path.abspath(os.path.dirname(__file__))
+PRETO = (0, 0, 0)
+BRANCO = (255, 255, 255)
+VERDE = (60, 220, 0)
+AMARELO = (255, 240, 60)
+CINZA = (50, 50, 50)
+TAMANHO_JANELA = (800, 800)
 
-size = width, height = (800, 800)
-road_w = int(width / 1.6)
-roadmark_w = int(width / 200)
-right_track = width / 2 + road_w / 4
-left_track = width / 2 - road_w / 4
-speed = 1
+# Variaveis
+tamanho = largura, altura = TAMANHO_JANELA
+largura_estrada = int(largura / 1.6)
+largura_separador = int(largura / 200)
+lado_direito = largura / 2 + largura_estrada / 4
+lado_esquerdo = largura / 2 - largura_estrada / 4
+velocidade = 1
 
-pygame.init()
-screen = pygame.display.set_mode(size)
-pygame.display.set_caption("Catch a beer")
-screen.fill(GREEN)
-pygame.display.update()
+# Jogadores
+jogador = pg.image.load(os.path.join(DIR, "player", "player.png"))
+jogador = pg.transform.scale(jogador, (150, 150))
+posicao_do_jogador = jogador.get_rect()
+posicao_do_jogador.center = lado_direito, altura * 0.8
 
-player = pygame.image.load("player.png")
-player = pygame.transform.scale(player, (150, 150))
-player_loc = player.get_rect()
-player_loc.center = right_track, height * 0.8
+# Janela principal
+pg.init()
+tela = pg.display.set_mode(tamanho)
+pg.display.set_caption("Catch a beer")
+tela.fill(VERDE)
+pg.display.update()
 
-font = pygame.font.SysFont("Comic Sans MS", 40)
-font2 = pygame.font.SysFont("Comic Sans MS", 90)
+# Fontes
+letra = pg.font.SysFont("Comic Sans MS", 30)
+letra_grande = pg.font.SysFont("Comic Sans MS", 90)
 
 
-def load_a_random_beer() -> Tuple:
+def carrega_cerveja_aleatoria():
     i = random.randint(1, 5)
-    beer = pygame.image.load(f"beers/{i}.png")
-    beer = pygame.transform.scale(beer, (100, 100))
-    beer_loc = beer.get_rect()
+    cerveja = pg.image.load(os.path.join(DIR, "beers", f"{i}.png"))
+    cerveja = pg.transform.scale(cerveja, (100, 100))
+    posicao_da_cerveja = cerveja.get_rect()
     if random.randint(0, 1) == 0:
-        beer_loc.center = right_track, height * 0.2
+        posicao_da_cerveja.center = lado_direito, altura * 0.2
     else:
-        beer_loc.center = left_track, height * 0.2
-    return beer, beer_loc
+        posicao_da_cerveja.center = lado_esquerdo, altura * 0.2
+    return cerveja, posicao_da_cerveja
 
 
-beer, beer_loc = load_a_random_beer()
+# Valores de inicialização do jogo
+cerveja, posicao_da_cerveja = carrega_cerveja_aleatoria()
+bebeu = 0
+rodadas = 0
+executando = True
+pausado = True
+perdas = 0
 
-points = 0
-turns = 0
-running = True
-pause = True
-while running:
+# Loop principal
+while executando:
+    rodadas += 1
 
-    turns += 1
+    # Fica mais rápido com o tempo
+    if rodadas == 5000:
+        velocidade += 0.5
+        rodadas = 0
+        print("Level UP", velocidade)
 
-    if turns == 2500:
-        speed += 0.5
-        turns = 0
-        print("Level UP", speed)
+    # Detecção de colisão (bebeu a cerveja)
+    if (
+        10 < (posicao_do_jogador[1] - posicao_da_cerveja[1]) < 30
+        and posicao_do_jogador[0] == posicao_da_cerveja[0] - 25
+    ):
+        bebeu += 1
+        sound = random.choice(["sensacional.mp3", "olha_so.mp3"])
+        pg.mixer.music.load(os.path.join(DIR, "sound", sound))
+        pg.mixer.music.play(0)
+        cerveja, posicao_da_cerveja = carrega_cerveja_aleatoria()
 
-    # colision
-    if player_loc[1] == beer_loc[1] and player_loc[0] == beer_loc[0] - 25:
-        # print(f"{player_loc=}")
-        # print(f"{beer_loc=}")
-        points += 1
-        beer, beer_loc = load_a_random_beer()
+    # Animação da cerveja saindo do ponto inicial da reta Y (vertical)
+    # E se movimentando a cada rodada
+    posicao_da_cerveja[1] += velocidade
 
-    beer_loc[1] += speed
+    # Captura Eventos do Pygame (teclas pressionadas)
+    for event in pg.event.get():
+        if event.type == keys.QUIT:
+            executando = False
+        if event.type == keys.KEYDOWN:
+            if event.key in (keys.K_a, keys.K_LEFT):
+                posicao_do_jogador = posicao_do_jogador.move(
+                    (-int(largura_estrada / 2), 0)
+                )
+            if event.key in (keys.K_d, keys.K_RIGHT):
+                posicao_do_jogador = posicao_do_jogador.move(
+                    (int(largura_estrada / 2), 0)
+                )
 
-    # events
-    for event in pygame.event.get():
-        if event.type == pg.QUIT:
-            running = False
-        if event.type == pg.KEYDOWN:
-            if event.key in (pg.K_a, pg.K_LEFT):
-                player_loc = player_loc.move((-int(road_w / 2), 0))
-            if event.key in (pg.K_d, pg.K_RIGHT):
-                player_loc = player_loc.move((int(road_w / 2), 0))
-
-    # draw road
-    pygame.draw.rect(screen, GRAY, (width / 2 - road_w / 2, 0, road_w, height))
-    # draw centre line
-    pygame.draw.rect(
-        screen,
-        YELLOW,
-        (width / 2 - roadmark_w / 2, 0, roadmark_w, height),
+    # Desenha a estrada no meio da tela
+    pg.draw.rect(
+        tela,
+        CINZA,
+        (largura / 2 - largura_estrada / 2, 0, largura_estrada, altura),
     )
-    # draw left road marking
-    pygame.draw.rect(
-        screen,
-        WHITE,
-        (width / 2 - road_w / 2 + roadmark_w * 2, 0, roadmark_w, height),
-    )
-    # draw right road marking
-    pygame.draw.rect(
-        screen,
-        WHITE,
-        (width / 2 + road_w / 2 - roadmark_w * 3, 0, roadmark_w, height),
+
+    # Desenha o separador da estrada
+    pg.draw.rect(
+        tela,
+        AMARELO,
+        (largura / 2 - largura_separador / 2, 0, largura_separador, altura),
     )
 
-    banner = font.render(f"Catch a Beer! {points}", 1, WHITE, BLACK)
-    screen.blit(banner, (width / 4, 0))
+    # Borda esquerda
+    pg.draw.rect(
+        tela,
+        BRANCO,
+        (
+            largura / 2 - largura_estrada / 2 + largura_separador * 2,
+            0,
+            largura_separador,
+            altura,
+        ),
+    )
+    # Borda direita
+    pg.draw.rect(
+        tela,
+        BRANCO,
+        (
+            largura / 2 + largura_estrada / 2 - largura_separador * 3,
+            0,
+            largura_separador,
+            altura,
+        ),
+    )
 
-    # place images on the screen
-    screen.blit(player, player_loc)
-    screen.blit(beer, beer_loc)
+    # Titulo
+    titulo = letra.render(
+        f"Catch a Beer! bebeu: {bebeu} vacilou: {perdas}", 1, BRANCO, PRETO
+    )
+    tela.blit(titulo, (largura / 5, 0))
 
-    pygame.display.update()
+    # Adiciona jogador e imagens na tela
+    tela.blit(jogador, posicao_do_jogador)
+    tela.blit(cerveja, posicao_da_cerveja)
 
-    # Started?
-    while pause:
-        msg = font.render("Press any key to start", True, YELLOW, BLACK)
-        screen.blit(msg, (width / 4, 100))
-        pygame.display.update()
-        for event in pygame.event.get():
-            if event.type == pg.KEYDOWN:
-                pause = False
+    # Recarrega os gráficos na tela em suas posições alteradas no loop
+    pg.display.update()
 
-    # Game over?
-    if beer_loc[1] > height:
-        msg = font2.render("GAME OVER", True, YELLOW, BLACK)
-        screen.blit(msg, (width / 4, 100))
-        pygame.display.update()
+    # Espera o jogador pressionar uma tecla
+    while pausado:
+        msg = letra.render("Press any key to start", True, AMARELO, PRETO)
+        tela.blit(msg, (largura / 4, 100))
+        pg.display.update()
+        for event in pg.event.get():
+            if event.type == keys.KEYDOWN:
+                pg.mixer.music.load(os.path.join(DIR, "sound", "vai.mp3"))
+                pg.mixer.music.play(0)
+                pausado = False
+
+    # Verifica se o jogador deixou a cerveja cair
+    if posicao_da_cerveja[1] > altura:
+        perdas += 1
+        cerveja, posicao_da_cerveja = carrega_cerveja_aleatoria()
+
+    # Se cairem 3 cervejas o jogo acaba
+    if perdas > 3:
+        msg = letra_grande.render("GAME OVER", True, AMARELO, PRETO)
+        pg.mixer.music.load(os.path.join(DIR, "sound", "zika.mp3"))
+        pg.mixer.music.play(0)
+        tela.blit(msg, (largura / 4, 100))
+        pg.display.update()
         wait_key = True
         while wait_key:
-            for event in pygame.event.get():
-                if event.type == pg.KEYDOWN:
-                    wait_key = running = False
-        pygame.quit()
+            for event in pg.event.get():
+                if event.type == keys.KEYDOWN:
+                    wait_key = executando = False
+        pg.quit()
 
-pygame.quit()
+pg.quit()
