@@ -64,7 +64,7 @@ while executando:
 
     # Fica mais rápido com o tempo
     if rodadas == 5000:
-        velocidade += 0.5
+        velocidade += 0.15
         rodadas = 0
         print("Level UP", velocidade)
 

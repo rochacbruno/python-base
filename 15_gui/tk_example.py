@@ -4,7 +4,7 @@ from tkinter import Tk, Label, Entry, Button, StringVar
 janela = Tk()
 
 # Criamos os widgets
-titulo = Label(janela, text="Hello")
+titulo = Label(janela, text="Seu Nome")
 nome = Entry(janela)
 var = StringVar()
 mensagem = Label(janela, textvariable=var)
