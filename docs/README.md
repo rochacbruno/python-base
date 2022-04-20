@@ -33,7 +33,7 @@ a criação de vários pequenos programas que vão abordar as principais
 funcionalidades do Python e vamos também criar um projeto completo do zero com as
 melhores práticas do mercado.
 
-Duração estimada em horas: 60h
+Duração estimada em horas: 64h
 
 ---
 ## Conteudo:
@@ -43,15 +43,15 @@ Duração estimada em horas: 60h
 Neste capítulo você terá uma introdução ao treinamento e aos conceitos básicos de programação
 e a linguagem Python, também aprenderá como instalar e preparar um ambiente para programar.
 
-1. Introdução
-2. Programação e Linguagens
-3. Como é organizada a plataforma Python
-4. Instalação e preparação do ambiente
-5. Repositório, git e seu primeiro script
-6. Variáveis de ambiente
-7. Tipos de instruções
-8. Organização de blocos de código
-9. Ambientes virtuais, instalação de pacotes e Ipython
+01. Introdução
+00. Programação e Linguagens
+00. Como é organizada a plataforma Python
+00. Instalação e preparação do ambiente
+00. Repositório, git e seu primeiro script
+00. Variáveis de ambiente
+00. Tipos de instruções
+00. Organização de blocos de código
+00. Ambientes virtuais, instalação de pacotes e Ipython
 
 Duração: 5h
 
@@ -61,15 +61,15 @@ Neste capítulo você conhecerá os tipos e estruturas de dados do Python e exec
 práticos para entender como manipulamos informações.
 
 10. Protocolos e Tipos de dados primitivos
-11. Float, Bool, None
-12. Textos, Caracteres e Strings
-13. Formatação de texto
-14. Tipos de dados compostos e Tuplas
-15. Listas
-16. Exercicio com Listas, Tuplas, Loops e Condicionais
-17. Sets (conjuntos)
-18. Dicionários
-19. Exercicio: Refatorando nosso Hello World com dicionários
+00. Float, Bool, None
+00. Textos, Caracteres e Strings
+00. Formatação de texto
+00. Tipos de dados compostos e Tuplas
+00. Listas
+00. Exercicio com Listas, Tuplas, Loops e Condicionais
+00. Sets (conjuntos)
+00. Dicionários
+00. Exercicio: Refatorando nosso Hello World com dicionários
 
 Duração: 7h
 
@@ -79,16 +79,16 @@ Nesta parte do treinamento o foco é obter informações do usuário, aplicar al
 processar e persistir a informação em arquivos.
 
 20. Stdin e Stdout
-21. Leitura de inputs do stdin e de argumentos do terminal
-22. Exercicio de criação de uma calculadora infix com input e argumentos
-23. Filesystem - Manipulação de arquivos e pastas
-24. Exercicio - Criando um bloco de anotações no terminal
-25. Tratamento de Erros LBYL e EAFP
-26. Logging - Formatando e gravando logs
-27. Algoritmos e lógica - Condicionais, Operadores compostos
-28. Condicionais ternárias e inline
-29. Repetições com for, while e comprehensions.
-30. Exercicio: Sistema de Reservas com iterators, textos, inputs e arquivos de texto.
+00. Leitura de inputs do stdin e de argumentos do terminal
+00. Exercicio de criação de uma calculadora infix com input e argumentos
+00. Filesystem - Manipulação de arquivos e pastas
+00. Exercicio - Criando um bloco de anotações no terminal
+00. Tratamento de Erros LBYL e EAFP
+00. Logging - Formatando e gravando logs
+00. Algoritmos e lógica - Condicionais, Operadores compostos
+00. Condicionais ternárias e inline
+00. Repetições com for, while e comprehensions.
+00. Exercicio: Sistema de Reservas com iterators, textos, inputs e arquivos de texto.
 
 Duração: 10h
 
@@ -99,18 +99,18 @@ aprenderá técnicas e ferramentas para depurar erros do programa e em seguida a
 a criar seu próprio projeto com as melhores práticas.
 
 31. Funções builtin uteis - sum, len, vars, min, max, filter, map
-32. Funções úteis da biblioteca padrão - random, pprint, itertools, functools, smtplib etc
-33. Definindo suas próprias Funções e aplicando fórmula matemática
-34. Anatomia detalhada de funções - assinatura, argumentos, retornos
-35. Escopos e namespaces e argumentos coringas
-36. Funções lambda
-37. Exercicio com lambda, recursão e introdução a programação funcional
-38. Debugging - Técnicas e ferramentas para encontrar erros.
-39. O Sistema de imports do Python
-40. Criando um repositótio para seu primeiro projeto e configurando o VSCode
-41. Estrutura de pastas, build e install do projeto
-42. Entry points com console scripts
-43. Gestão de dependencias e Makefile
+00. Funções úteis da biblioteca padrão - random, pprint, itertools, functools, smtplib etc
+00. Definindo suas próprias Funções e aplicando fórmula matemática
+00. Anatomia detalhada de funções - assinatura, argumentos, retornos
+00. Escopos e namespaces e argumentos coringas
+00. Funções lambda
+00. Exercicio com lambda, recursão e introdução a programação funcional
+00. Debugging - Técnicas e ferramentas para encontrar erros.
+00. O Sistema de imports do Python
+00. Criando um repositótio para seu primeiro projeto e configurando o VSCode
+00. Estrutura de pastas, build e install do projeto
+00. Entry points com console scripts
+00. Gestão de dependencias e Makefile
 
 Duração: 12h
 
@@ -121,15 +121,15 @@ testes unitários, testes de integração e adequação com code style além de 
 a documentação de software e empacotamento.
 
 44. Introdução a testes + Doctest, Pytest e Decorators
-45. Diferençá entre unit e integration tests, configuração do Pytest e CI com Github Actions
-46. Boas práticas em testes e test reports
-47. Qualidade de código, linters e auto formatação
-48. Escolhendo boas ferramentas e libraries
-49. Introdução ao TDD
-50. Introdução a persistencia de dados e testes
-51. Documentação de projetos, Empacotamento e Distribuição no PyPI
+00. Diferençá entre unit e integration tests, configuração do Pytest e CI com Github Actions
+00. Boas práticas em testes e test reports
+00. Qualidade de código, linters e auto formatação
+00. Escolhendo boas ferramentas e libraries
+00. Introdução ao TDD
+00. Introdução a persistencia de dados e testes
+00. Documentação de projetos, Empacotamento e Distribuição no PyPI
 
-Duração: TBD
+Duração: 10h
 
 ## Day 6 - Orientação a Objetos
 
@@ -138,16 +138,16 @@ seguindo um modelo que é um pouco diferente do tradicional e muito flexivel, ne
 falaremos sobre toda a base da orientação a objetos com Python.
 
 52. Os paradigmas de programação
-53. Introdução a Orientação a Objetos
-54. Inicialização de instâncias
-55. Os 4 pilares da O.O: Abstração, Herança, Polimorfismo, Encapsulamento
-56. Encapsulamento com properties
-57. Python Data Model e Protocolos
-58. Python Moderno, Type Annotations e Dataclasses
-59. Dataclass abstrata, Enums, field e super()
-60. Structural Pattern Matching
+00. Introdução a Orientação a Objetos
+00. Inicialização de instâncias
+00. Os 4 pilares da O.O: Abstração, Herança, Polimorfismo, Encapsulamento
+00. Encapsulamento com properties
+00. Python Data Model e Protocolos
+00. Python Moderno, Type Annotations e Dataclasses
+00. Dataclass abstrata, Enums, field e super()
+00. Structural Pattern Matching
 
-Duração: TBD
+Duração: 7h
 
 ## Day 7 - Consumindo e armazenando dados.
 
@@ -155,15 +155,15 @@ Na maior parte dos programas sempre teremos que carregar e armazenar dados e par
 precisamos aprender a usar bancos de dados SQL e consultar APIs.
 
 61. Modelangem de dados com dataclasses e Pydantic
-62. Prova de conceito de um ORM
-63. Introdução a SQL e SQLite
-64. SQL Alchemy
-65. SQL Model
-66. Convertendo software legado para SQL
-67. Database Migrations e Consumindo API Rest
-68. Finalização do Projeto e desafios
+00. Prova de conceito de um ORM
+00. Introdução a SQL e SQLite
+00. SQL Alchemy
+00. SQL Model
+00. Convertendo software legado para SQL
+00. Database Migrations e Consumindo API Rest
+00. Finalização do Projeto e desafios
 
-Duração: TBD
+Duração: 8h
 
 ## Day 8 - Demonstrações
 
@@ -173,9 +173,9 @@ mas sim de mão na massa, seguindo o mesmo projeto desenvolvido no treinamento v
 adicionar interfaces Gráfica (GUI), 2D (Pygame), terminal (TUI), web (html) e API (REST).
 
 69. Interface Gráfica para Desktop - Demonstração com Tk e Pysimplegui
-70. Interface 2D para games - Demonstração com Pygame
-71. Interface Gráfica para Terminal - Demonstração com Textual (game)
-72. Interface web com html - Demonstração com Flask
-73. Interface API com REST/Json - Demonstração com FastAPI
+00. Interface 2D para games - Demonstração com Pygame
+00. Interface Gráfica para Terminal - Demonstração com Textual (game)
+00. Interface web com html - Demonstração com Flask
+00. Interface API com REST/Json - Demonstração com FastAPI
 
-Duração: TBD
+Duração: 5h
