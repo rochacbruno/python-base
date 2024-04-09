@@ -5,15 +5,15 @@ as motivações do criador da linguagem.
 
 Antes de criar o Python, Guido Van Rossum trabalhou no desenvolvimento de
 outra linguagem chamada ABC e o objetivo dessa linguagem era ser uma
-linguagem de fácil leitura por pessoas de outras areas academicas.
+linguagem de fácil leitura por pessoas de outras áreas acadêmicas.
 
-Ele partiu do principio de que passamos muito mais horas lendo código
+Ele partiu do princípio de que passamos muito mais horas lendo código
 do que escrevendo e concluiu que a maneira tradicional que as linguagens
-adotavam para demilitar código não seria tão natural para quem não está 
+adotavam para delimitar código não seria tão natural para quem não está 
 acostumado.
 
 Uma grande parte das linguagens utiliza chaves `{ }` para delimitar os blocos
-de código ficando mais ou menos assim
+de código, ficando mais ou menos assim:
 
 ```c
 statement (condicao) {
@@ -66,13 +66,13 @@ que nossa experiência ao fazer compra seja mais produtiva, pois agora podemos
 percorrer os corredores um a um sem a necessidade de passar duas vezes no mesmo
 corredor.
 
-## Identação
+## Edentação
 
-Indentation, Identação ou Denticulação é o termo usado para a formatação da
+Indentation, Edentação ou Denticulação é o termo usado para a formatação da
 lista de compras acima, após cada categoria ou seção colocamos um **recuo**
 antes de começar o conteúdo.
 
-E pensando neste exemplo natural o Python foi projetado, de forma que nós
+E pensando neste exemplo natural, o Python foi projetado, de forma que
 passamos muito mais tempo lendo código do que escrevendo.
 
 ## Blocos
@@ -84,8 +84,8 @@ de uma linha.
 if 1 > 2:  # inicio de bloco
 ```
 
-A linha que vem logo após o inicio do bloco deve obrigatoriamente ter um recuo (ou dente)
-e por isso chamamos de identação.
+A linha que vem logo após o início do bloco deve obrigatoriamente ter um recuo (ou dente)
+e por isso chamamos de edentação.
 
 ```py
 if 1 > 2:
@@ -96,7 +96,7 @@ if 1 > 2:
 ```
 
 Dentro de um bloco de código podem existir muitos sub blocos, níveis internos
-de recuo, mas a recomandação é que no máximo existam 4.
+de recuo, mas a recomendação é que no máximo existam 4 espaços.
 
 ```py
 if 1 > 2:
@@ -118,8 +118,8 @@ if 1 > 2:
 # e aqui continuamos o bloco principal (main)
 ```
 
-A maior parte dos editores de código possui ferramentas 
-que ajudam a visualizar as linhas de identação.
+A maioria dos editores de código possui ferramentas 
+que ajudam a visualizar as linhas de edentação.
 
 
 

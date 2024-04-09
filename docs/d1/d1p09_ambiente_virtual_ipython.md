@@ -3,19 +3,19 @@
 Até agora fizemos um script independente, o nosso `hello.py` que não possui
 dependências e pode rodar em qualquer ambiente com Python.
 
-Porém conforme nossos programas ficam mais complexos acabamos utilizando
+Porém, conforme nossos programas ficam mais complexos acabamos utilizando
 soluções prontas do ecossistema Python, o PyPI, repositório de pacotes
 oferece mais 300 mil pacotes para reutilizar.
 
 Qual o problema?
 
 Se instalarmos as bibliotecas do PyPI diretamente no Python principal do
-sistema podemos criar conflitos e deixar o ambiente muito cheio de biblitecas
+sistema podemos criar conflitos e deixar o ambiente muito cheio de bibliotecas
 que podem se tornar obsoletas.
 
-Para resolver esse problemas o recomendado é criarmos um **sandbox**, um ambiente
+Para resolver esses problemas o recomendado é criarmos um **sandbox**, um ambiente
 separado onde podemos ter uma cópia do ambiente Python isolada onde não
-corremos o risco de criar conflitos.
+arriscamos criar conflitos.
 
 ## Ambiente real
 
@@ -35,13 +35,13 @@ vem com uma ferramenta que faz essa cópia automaticamente.
 ## Ambiente Virtual
 
 O ambiente virtual é um **sandbox**, é uma cópia de todo o ambiente Python
-e a recomendação é que você tenha um ambiente virtual em cada um dos seus projetos
+e a recomendação é que você tenha um ambiente virtual em cada um dos seus projetos,
 cada projeto deve usar seu próprio conjunto de bibliotecas isoladamente.
 
 Criando o ambiente virtual
 
-Na pasta do seu projeto usamos o módulop `venv` e informamos um nome para a pasta
-do ambiente ser criada, é comum que o nome seja `.venv` pois o `.` torna a 
+Na pasta do seu projeto usamos o módulo `venv` e informamos um nome para a pasta
+do ambiente ser criada, é comum que o nome seja `.venv`, pois o `.` torna a 
 pasta oculta no seu sistema e esse nome é comumente adotado.
 
 ```bash
@@ -58,11 +58,11 @@ $ ls -a .venv
 ```
 
 Ali dentro da pasta `bin` é onde encontramos o `python` e também outras 
-ferramentas como o `pip` e a apartir de agora todos os módulos que 
+ferramentas como o `pip` e a a partir de agora todos os módulos que 
 instalarmos vão para dentro da pasta `lib`.
 
 Mas para usar o ambiente virtual sempre será necessário efetuar a ativação,
-no linux isso é feito com o comando abaixo:
+no Linux isso é feito com o comando abaixo:
 
 ```bash
 source .venv/bin/activate
@@ -87,18 +87,18 @@ which python
 
 O retorno deve ser algo como `~/Projects/python-base/.venv/bin/python`
 
-> **IMPORTANTE** sempre que abrir um terminal, antes de executar os comandos
+> **IMPORTANTE**: sempre que abrir um terminal, antes de executar os comandos
 > você deverá ativar o ambiente virtual do seu projeto. Existem ferramentas
-> que podem fazer isso automaticamente para você como o zsh ou o poetry
+> que podem fazer isso automaticamente para você como o zsh ou o poetry,
 > mas durante o aprendizado eu recomendo manter os comandos todos manuais
-> para você fixar a idéia da necessidade deles e no futuro automatize.
+> para você fixar a ideia da necessidade deles e no futuro automatize.
 
 
 ## Git Ignore
 
 Em nosso projeto agora temos uma nova pasta `.venv` com centenas de arquivos
 e se fizermos um commit + push usando o git iremos mandar essa pasta toda
-para o repositório remoto do github e queremos evitar isso, a `.venv` é apenas
+para o repositório remoto do GitHub e queremos evitar isso, a `.venv` é apenas
 para uso local, se outra pessoa precisar executar seu código ela terá que criar
 o ambiente virtual diretamente lá no ambiente que precisar.
 
@@ -127,7 +127,7 @@ echo ".venv" >> .gitignore
 
 O comando acima adiciona o texto `.venv` no final do arquivo `.gitignore`
 
-Desta forma evitamos que a pasta venv vá para o git mas agora você precisa
+Desta forma evitamos que a pasta venv vá para o git, mas agora você precisa
 fazer um commit para adicionar o `.gitignore`.
 
 ```bash
@@ -138,7 +138,7 @@ git push
 
 ## Instalando pacotes
 
-Agora sim podemos instalar pacotes dentro do nosso ambiente virtual :)
+Agora, sim, podemos instalar pacotes dentro do nosso ambiente virtual :)
 
 Primeiro certifique-se de que `(.venv)` aparece em seu terminal ou que
 `which python` mostra o Python de dentro da pasta `.venv`.
@@ -159,10 +159,10 @@ python3 -m pip install ipython
 ```
 
 O terminal Python que usamos até agora é muito bom e serve para fazer tudo o 
-que precisamos mas faltam algumas coisas como output colorido que facilita a 
+que precisamos, mas faltam algumas coisas como output colorido que facilita a 
 leitura das mensagens e também ferramentas mais fáceis para obter ajuda.
 
-O Ipython é uma versão do interpretadotr Python que possui mais funcionalidades.
+O Ipython é uma versão do interpretador Python que possui mais funcionalidades.
 
 Digite `ipython`  e perceba como ele é um pouco diferente do terminal que 
 usamos anteriormente.
@@ -188,12 +188,12 @@ Out[1]: 2
 ```
 
 Repare que a resposta vem em um novo prompt contento `Out [1]:` e isso é 
-bastante poderoso pois ele grava um histórico de todos os seus comandos
-e você pode por exemplo digitar `_1` ou `_2` etc para acessar o retorno 
+bastante poderoso, pois ele grava um histórico de todos os seus comandos
+e você pode, por exemplo, digitar `_1` ou `_2` etc para acessar o retorno 
 de algum comando que digitou anteriormente.
 
 
-Além disso o Ipython possui uma ajuda mais completa usando `?` ou `??` ao invés
+Além disso, o Ipython possui uma ajuda mais completa usando `?` ou `??` ao invés
 de usar `help()`
 
 ```bash
@@ -210,7 +210,7 @@ flush: whether to forcibly flush the stream.
 Type:      builtin_function_or_method
 ```
 
-E também oferece auto-complete, experimente começar a digitar por exemplo a letra
+E também oferece auto-complete, experimente começar a digitar, por exemplo, a letra
 `p` e depois pressionar `tab` e ele vai te mostrar um seletor com todos os objetos
 começados pela letra `p`.
 
