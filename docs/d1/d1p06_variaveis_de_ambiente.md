@@ -1,4 +1,4 @@
-# Usando variavéis e condicionais
+# Usando variáveis e condicionais
 
 ## Docstring e metadados dunder
 
@@ -31,25 +31,25 @@ __license__ = "Unlicense"
 ```
 
 E além do comentário de documentação, chamado **DocString** é também comum a 
-inclusão de variavéis de metadados que inician e terminam com 2 underlines `__`
-a palavra que usamos para designar essas variavéis é `Dunder` portanto,
+inclusão de variáveis de metadados que iniciam e terminam com 2 underlines `__`
+a palavra que usamos para designar essas variáveis é `Dunder`, portanto
 **Dunder version** se refere a `__version__`.
 
-## Variavéis de Ambiente
+## Variáveis de Ambiente
 
 **Ambiente** é o termo que usamos para referir ao local onde o programa
 é executado, o ambiente em termos gerais é formado por um **shell** que em
 termos bem simplificados pode ser entendido como um local isolado onde o seu
 programa executa.
 
-Neste **ambiente** existem variavéis que servem para configurar o comportamento
+Neste **ambiente** existem variáveis que servem para configurar o comportamento
 do próprio ambiente, do sistema e dos programas que rodam.
 
-No linux ao digitar `env` no terminal você verá uma lista de todas as variáveis
-do ambiente, ali por exemplo está o nome do usuário em `USER` e a linguagem
+No Linux ao digitar `env` no terminal você verá uma lista de todas as variáveis
+do ambiente, ali, por exemplo, está o nome do usuário em `USER` e a linguagem
 em que o sistema operacional está configurado `LANG`.
 
-Podemos dentro do Python acessar essas variáveis de ambiente atráves do módulo
+Podemos dentro do Python acessar essas variáveis de ambiente através do módulo
 `os`.
 
 
@@ -63,7 +63,7 @@ os.getenv("LANG")  # função usada para buscar o valor de uma variável especif
 
 ## Obtendo uma parte de um texto (substring)
 
-Em nosso primeiro programa irá ler a variável de ambiente `LANG` e apartir dela decidir qual
+Em nosso primeiro programa irá ler a variável de ambiente `LANG` e a partir dela decidir qual
 mensagem de Hello World imprimir na tela, portanto se for `pt_BR` imprimimos
 `Olá, Mundo!` se for `it_IT` será `Ciao, Mondo!` e assim por diante.
 
@@ -77,7 +77,7 @@ e nós queremos apenas a primeira parte antes do `.`, nesse caso queremos
 >>> os.getenv("LANG")
 'en_US.utf8'
 
-# Apenas os 5 primeiros caractered
+# Apenas os 5 primeiros caracteres
 >>> os.getenv("LANG")[:5]
 'en_US'
 
@@ -85,7 +85,7 @@ e nós queremos apenas a primeira parte antes do `.`, nesse caso queremos
 >>> os.getenv("LANG", "en_US")[:5]
 'en_US'
 
-# Através do aplit do texto
+# Através do split do texto
 >>> os.getenv("LANG", "en_US").split(".")[0]
 'en_US'
 ```
@@ -101,7 +101,7 @@ Em nosso programa vamos por enquanto escolher a versão
 Iremos explorar o significado de `[:5]` logo mais quando falarmos de iteração 
 de objetos :) 
 
-Portanto nosso script agora contém:
+Portanto, nosso script agora contém:
 
 
 ```py=
@@ -146,8 +146,8 @@ para tomar uma decisão de qual mensagem exibir na tela, decisões que alteram
 o fluxo de execução do código são chamadas de "Condicionais".
 
 Em Python o statement `if` é usado para definir um teste e sempre usamos `if`
-junto com uma expressão de comparação como por exemplo `1 > 2` e neste caso
-teriamos a condicional: `se 1 for maior que 2 (execute determinada instrução)`
+junto com uma expressão de comparação como, por exemplo, `1 > 2` e neste caso
+teríamos a condicional: `se 1 for maior que 2 (execute determinada instrução)`
 traduzindo isso para código seria:
 
 ```py=
@@ -156,7 +156,7 @@ if 1 > 2:
 
 ```
 
-Portanto agora podemos alterar nosso script e adicionar a condicional que irá
+Portanto, agora podemos alterar nosso script e adicionar a condicional que irá
 alterar o valor de `msg` dependendo da linguagem definida no ambiente.
 
 ```
@@ -234,7 +234,7 @@ python3 hello.py
 
 ## Commit
 
-Agora que o código está funcionando é importante adicionar ao histórico do git.
+Agora que o código está funcionando, é importante adicionar ao histórico do git.
 
 ```bash
 # veja a lista de alterações a serem aplicadas
@@ -246,7 +246,7 @@ git add hello.py
 # faça o commit
 git commit -m "Implementei o script multi linguas"
 
-# mande para o repositório do Github
+# mande para o repositório do GitHub
 git push
 ```
 

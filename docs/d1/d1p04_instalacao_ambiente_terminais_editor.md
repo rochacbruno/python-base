@@ -4,51 +4,52 @@
 ## Python
 
 O caminho recomendado para instalação do Python é através do site oficial
-http://python.org na página de downloads pode obter o instalador para o seu
-sistema operacional.
+(https://www.python.org/downloads/), nesta página você pode obter o seu 
+instalador de acordo com o seu sistema operacional.
 
 Para este treinamento usaremos o Python 3.6+, ou seja, qualquer versão acima
 do 3.6 irá funcionar.
 
 Se estiver em um sistema Linux, provavelmente o Python já se encontra instalado
-ou pode obte-lo através do gerenciador de pacotes do seu sistema.
+ou pode obtê-lo através do gerenciador de pacotes do seu sistema.
 
 Caso não possa instalar por algum motivo, temos ainda a alternativa de
-usar o Python online através das ferramantar http://replit.com ou https://gitpod.io
-para essas 2 ferramentas é necessário ter um cadastro no Github.
+usar o Python online através das ferramanta (https://replit.com) ou 
+(https://gitpod.io) para essas 2 ferramentas é necessário ter um cadastro
+ no Github.
 
 ## Terminal
 
 Você pode usar o terminal de sua preferência desde que seja compatível com 
-Linux, no windows por exemplo pode usar o WSL (Windows Subsystem for Linux)
-que abre um terminal Linux dentro do windows.
+Linux, no Windows, por exemplo, pode-se usar o WSL(Windows Subsystem for Linux)
+que abre um terminal Linux dentro do Windows.
 
-A título de curiosidade, no meu ambiente utilizo Arch Linux, i3wm, Terminator, 
+*Curiosidade: no meu ambiente utilizo Arch Linux, i3wm, Terminator, 
 ZSH e starship.rs
 
 ## Editor
 
 A escolha de editor é pessoal, escolha o que gostar mais e que te dê maior
 conforto e produtividade, eu vou recomendar que você evite neste primeiro
-momento o uso de IDE (Ambiente Integrado) as IDEs são muito boas mas abstraem
-muitas coisas e por exemplo, ao invés de ir ao terminal e dar os comandos para
+momento o uso de IDE (Ambiente Integrado) as IDEs são ótimas, mas abstraem
+muitas coisas e, por exemplo, ao invés de ir ao terminal dar os comandos para
 rodar o programa, na IDE você cai na tentação de apertar um botão "> run" que
 você acaba nem sabendo o que ele faz exatamente.
 
-Minha recomendação para nosso workflow de trabalho é que você mantenha sempre
+Minha recomendação para nosso fluxo  de trabalho é que você mantenha sempre
 2 terminais abertos no seu sistema lado a lado, um para escrevermos o código e
 outro para executarmos.
 
-No caso de editor de terminal eu recomendo usar o micro-editor pois ele é leve
+No caso de editor de terminal eu recomendo usar o micro-editor, pois ele é leve
 e tem funcionamento bem simples, mas você pode também preferir usar outros como
-nano, vim, neovim, emacs mas eu só os recomendo caso você já tenha algum
+Nano, Vim, Neovim, Emacs mas eu só os recomendo caso você já tenha algum
 conhecimento no funcionamento deles.
 
-Fique a contade para usar editores gráficos como Visual Studio Code ou Sublime 
+Fique a vontade para usar editores gráficos como Visual Studio Code ou Sublime 
 Text.
 
-A título de curiosidade eu utilizo 3 editors e estou sempre alternando entre eles
-micro-editor, vim e vscode, dependendo da tarefa eu acabo escolhendo um deles.
+*Curiosidade: eu utilizo 3 editors e estou sempre alternando entre eles
+Micro-editor, Vim e VSCode, dependendo da tarefa eu acabo escolhendo um deles.
 
 
 ## Python
@@ -100,7 +101,7 @@ python
 `>>>`
 
 O sinal `>>>` é o prompt do Python e significa que ele está a espera de um comando
-ali você pode digitar `1 + 1` ou qualquer operação matemática ou fazer chamadas
+ali você pode digitar `1 + 1` ou qualquer operação matemática, ou fazer chamadas
 de funções como `print("bruno".upper())`
 
 
