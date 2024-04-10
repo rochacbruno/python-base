@@ -1,7 +1,7 @@
 # Python
 
-Ao pensar na palavra Python a primeira coisa que nos vem a mente é a linguagem
-de programação, certo? (o grupo de humor britânico também).
+Ao pensar na palavra Python, a primeira coisa que nos vem a mente é a linguagem
+de programação, certo? (O grupo de humor britânico também).
 
 Mas Python é muito mais do que somente a linguagem, Python é uma plataforma
 formada por uma série de componentes.
@@ -16,9 +16,9 @@ escrito pelo criador do Python.
 
 ## Implementação
 
-A partir da PLR essa especificação é programada para interpretar e
-executar programas Python, a implementação oficial é escrita na linguagem C
-e é essa iremos utilizar, porém, existem outras implementações como IronPython para
+A partir da PLR, essa especificação é programada para interpretar e
+executar programas Python. A implementação oficial é escrita na linguagem C
+e é essa que iremos utilizar, porém, existem outras implementações como IronPython para
 rodar dentro da plataforma .Net, o Jython que roda na máquina virtual Java,
 o PyPy que é um Python reescrito em Python para ser mais rápido, temos o 
 MicroPython que é mais leve para ser usado em chips embarcados e várias outras
@@ -35,7 +35,7 @@ a comunidade.
 Em diversas localidades presenciais e virtuais existem pessoas que se juntam
 para  compartilhar conhecimento de Python e essas comunidades
 muitas vezes estão organizadas em fundações, grupos de nicho e empresas que
-tem interesses em comum relacionados a Python.
+têm interesses em comum relacionados a Python.
 
 ## PSF
 
@@ -56,6 +56,6 @@ a ferramenta `pip` que instalamos bibliotecas e ferramentas.
 ## Você!
 
 E você que está iniciando agora com Python já pode se considerar parte deste 
-ecossistema, boas-vindas a comunidade Python! :)
+ecossistema, boas-vindas à comunidade Python! :)
 
 Pessoas > Tecnologia :)

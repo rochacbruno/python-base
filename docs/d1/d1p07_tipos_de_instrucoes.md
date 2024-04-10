@@ -73,7 +73,7 @@ if nao_faca_nada:
 
 Nos exemplos: `if 1 > 2:` temos um statement `if` seguido de uma expressão `1 > 2`
 
-## Atribuição (Assignment)
+## Atribuição (assignment)
 
 É o nome dado a expressão que pega o resultado de uma expressão e salva em uma
 variável atribuindo um `nome/identificador` ao resultado que pode ser usado como
@@ -91,4 +91,4 @@ identificador  e do lado direito a expressão a ser atribuida.
 
 No exemplo `total = preco * quantidade`  primeiro o Python resolve a expressão
 `10 * 5` resultando em `50`  e então a a partir do sinal de `=` armazena `50` 
-como valor da variável `total`
+como valor da variável `total`.
