@@ -223,4 +223,4 @@ In [5]: p<tab>
  property   %pdb       %pfile     %popd      %%prun     %pwd       %%python             
 ```
 
-Recomendo que em todos os seus ambientes virtuais você adicione o Ipython :)
+Recomendo que em todos os seus ambientes virtuais você adicione o Ipython! :)

@@ -5,7 +5,7 @@ Na antiga 5 séria (atual 1 ano do ensino médio) aprendemos a teoria dos conjun
 ![](./imgs/sets.jpg)
 
 Python tem um tipo de objeto para representar este tipo composto,
-as caracteristicas de uso são bastante similares com listas e tuplas,
+as características de uso são bastante similares com listas e tuplas,
 mas é um objeto bastante particular e tem usos especificos.
 
 Sets podem ser criados usando as sintaxes:
@@ -66,24 +66,24 @@ twitter você tem 5000 seguidores e você deseja buscar um deles ou fazer essas
 operações de comparação como fizemos com os conjuntos.
 
 Se você tiver uma lista `["joao", "bruno", "maria", ...]` contendo os elementos, e quiser
-por exemplo buscar pelo usuario `"alfredo"` o python vai ter que percorrer toda a lista
+por exemplo buscar pelo usuário `"alfredo"` o python vai ter que percorrer toda a lista
 e comparar elemento por elemento até encontrar o alfredo, e se o alfredo estiver no final?
-Vai demorar muito, essa é uma operação que tem uma complexidade algoritmica `O(n)` pois
+Vai demorar muito, essa é uma operação que tem uma complexidade algorítmica `O(n)` pois
 Python vai ter que efetuar uma comparação para cada item `n` da lista.
 
 Os sets implementam uma hash table! 🎉
 
-É como se eles tivessem um indice gravado neles com uma tabela invertida dizendo
+É como se eles tivessem um índice gravado neles com uma tabela invertida dizendo
 ```py
 "joao" -> "esta na posição 0"
 "alfredo" -> "esta na posicao 345"
 ```
 Portanto quando precisarmos buscar o `alfredo` o python olha primeiro essa tabela
-e já vai diretamente na informação que está em `345` como se fizessemos `users[345]`
+e já vai diretamente na informação que está em `345` como se fizéssemos `users[345]`
 em uma lista e a complexidade desta operação passa a ser `O(1)` pois agora só
 tem uma comparação a ser feita.
 
-Bom, eu estou super simplificando a idéia aqui para você, tem mais detalhes
+Bom, eu estou super simplificando a ideia aqui para você, tem mais detalhes
 internos nessa implementação mas deu para sacar né?
 
 Por quê isso importa? **Sets são mais rápidos!**
@@ -106,7 +106,7 @@ remover elementos, eles são mutáveis
 
 ### Deduplicação
 
-Esta é uma das caracteristica mais interessante dos sets e talvez a sua maior
+Esta é uma das característica mais interessante dos sets e talvez a sua maior
 utilidade, sets não permitem itens duplicados, então ao criar um set você
 elimina as duplicidades.
 

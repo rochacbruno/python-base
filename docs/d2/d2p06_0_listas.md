@@ -40,7 +40,7 @@ Obtendo o tamanho da lista
 len(colors)
 ```
 
-Acessando elementos via indice
+Acessando elementos via índice
 
 ```py
 button_color = colors[0]
@@ -68,7 +68,7 @@ Podemos somar 2 listas (criando uma nova lista como resultado)
 ["red", "green", "blue", "yellow"]
 ```
 
-E podemos extender uma lista `in-place`
+E podemos estender uma lista `in-place`
 
 ```py
 >>> colors.extend(["purple"])
@@ -98,5 +98,5 @@ Contar elementos
 ```
 
 Mais uma vez vos digo que existe uma infinidade de coisas interessantes
-para fazermos com a lista e faremos tudo em nossos exericios e projetos 
+para fazermos com a lista e faremos tudo em nossos exercícios e projetos 
 durante o treinamento.

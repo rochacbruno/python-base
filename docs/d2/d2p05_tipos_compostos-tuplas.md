@@ -8,8 +8,8 @@ compostos.
 ## Tuplas
 
 As tuplas são o tipo composto mais simples de todos e bastante comum de serem
-usadam em Python, da mesma forma que anteriormente vimos que a string "ABC" é
-uma sequência de carecteres, com as tuplas conseguimos fazer uma sequência de 
+usadas em Python, da mesma forma que anteriormente vimos que a string "ABC" é
+uma sequência de caracteres, com as tuplas conseguimos fazer uma sequência de 
 valores que podem ser de qualquer tipo.
 
 Exemplo de um sistema que armazena coordenadas sem o uso de tuplas:
@@ -27,7 +27,7 @@ adicionando a coordenada `z` que é a profundidade, usada em sistemas 3d.
 ![](./imgs/cartesiano.png)
 
 Cada uma das coordenadas se refere a um ponto nessa reta e para definir um 
-**único** ponto nós usamos 3 variáveis e isso fica muito dificil de manter
+**único** ponto nós usamos 3 variáveis e isso fica muito difícil de manter
 caso nosso sistema tenha muitas dessas coordenadas, e ai que entram as tuplas.
 
 ```py
@@ -40,7 +40,7 @@ coord = (140, 200, 9)
 
 Em Python sempre que um ou mais objetos forem encadeados com `,` isso será
 interpretado como um objeto do tipo `tupla` e a tupla pode opcionalmente ter
-paranteses, nos já usamos tupla lembra? quando falamos de interpolação de textos.
+parênteses, nos já usamos tupla lembra? quando falamos de interpolação de textos.
 
 ```py
 "Olá %s você é o %03d da fila" % (nome, senha)
@@ -55,7 +55,7 @@ para desambiguar
 coord = 140, 200, 9
 ```
 
-Portanto com este tipo de objeto não temos mais as variaveis `x` e `y` e `z`, 
+Portanto com este tipo de objeto não temos mais as variáveis `x` e `y` e `z`, 
 agora temos uma única `coord` e para acessar os objetos que estão dentro da 
 tupla usamos o protocolo de **subscrição**, os objetos que possuem um método
 chamado `__getitem__` permitem que a gente acesse seus elementos usando `[ ]` e
@@ -77,7 +77,7 @@ mover_z_para_coordenada(coord[2])
 Repare que podemos acessar `coord[0]` e assim por diante usando `[numero]` e este
 número se refere a posição do valor que queremos dentro da tupla.
 
-Nestes casos, assumimos que seu software na hora de criar a variavel `coord` se
+Nestes casos, assumimos que seu software na hora de criar a variável `coord` se
 encarrega de colocar cada coisa em seu devido lugar :)
 
 Existe uma infinidade de usos práticos para as tuplas, nós ainda falaremos muito
@@ -86,7 +86,7 @@ e leitura de banco de dados.
 
 ### Desempacotamento
 
-A caracteristica mais interessante das tuplas se chama **unpacking** ou 
+A característica mais interessante das tuplas se chama **unpacking** ou 
 desempacotamento em português. 
 (algumas linguagens chamam isso de **spread, espalhamento, explode**)
 
@@ -102,7 +102,7 @@ x, y, z = coord
 ```
 
 No desempacotamento o Python automaticamente vai pegar cada um dos elementos
-da tupla e usar para definir as variaveis que separarmos por `,`.
+da tupla e usar para definir as variáveis que separarmos por `,`.
 
 
 > Aliás, está ai uma dica que ainda não falamos, é possível atribuir mais de
@@ -111,10 +111,10 @@ da tupla e usar para definir as variaveis que separarmos por `,`.
 
 ### Imutabilidade
 
-Outra caracteristica importante e que talvez seja decisiva na hora de escolher
+Outra característica importante e que talvez seja decisiva na hora de escolher
 usar tuplas é o fato de que elas são imutáveis, uma vez criada a tupla, não
-é possivel alterar, não dá para mudar os valores ou adicionar novos. 
-(este tópico contém  algumas excessões que veremos na nossa aula sobre escopos)
+é possível alterar, não dá para mudar os valores ou adicionar novos. 
+(este tópico contém  algumas exceções que veremos na nossa aula sobre escopos)
 
 ### Algumas coisas que podemos fazer com as tuplas
 

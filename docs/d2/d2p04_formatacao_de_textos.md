@@ -33,7 +33,7 @@ que queremos imprimir apenas 2 casas decimais do número float.
 Olá Bruno, você é o participante número 4 e pode ganhar 42.50 pontos.
 ```
 
-E também é possivel utilizar parâmetros nomeados.
+E também é possível utilizar parâmetros nomeados.
 
 ```py
 >>> mensagem = "Olá %(nome)s, você é o participante número %(num)d e pode ganhar %(pon).2f pontos."
@@ -42,7 +42,7 @@ Olá Bruno, você é o participante número 4 e pode ganhar 42.50 pontos.
 ```
 
 
-Apesar do uso de `%` ter caido em desuso no Python3, ainda existem bibliotecas
+Apesar do uso de `%` ter caído em desuso no Python 3, ainda existem bibliotecas
 como a `logging` que ainda utiliza este formato.
 
 ##### format
@@ -58,7 +58,7 @@ Olá Bruno, você é o participante número 4 e pode ganhar 42.5 pontos.
 ```
 
 Repare que ao invés de `%` agora usamos `{}` para marcar um **placeholder**
-e ao inves de `%` usamos a chamada do método `.format` do próprio tipo `str`
+e ao invés de `%` usamos a chamada do método `.format` do próprio tipo `str`
 para passar os valores em sequência.
 
 E também podemos especificar tipos e a precisão numérica usando `:` e os mesmos
@@ -113,7 +113,7 @@ para utilizar as opções de formatação, elas são tantas que não daria para
 abordarmos todas elas neste treinamento, mas não se preocupe que durante os
 nossos exercícios vamos utilizar as mais comuns.
 
-Uma outra forma mais rápida de obter essa ajuda é abrindo o python e digitando
+Uma outra forma mais rápida de obter essa ajuda é abrindo o Python e digitando
 
 ```py
 help('FORMATTING')
@@ -139,7 +139,7 @@ explicitamente `.format()` usamos `f"texto"`.
 '***45.30***'
 ```
 
-Uma útilidade interessante das f-strings é usar para fazer debugging.
+Uma utilidade interessante das f-strings é usar para fazer debugging.
 
 ```py
 >>> nome = "Bruno"

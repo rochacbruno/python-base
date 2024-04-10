@@ -4,7 +4,7 @@
     "python.formatting.provider": "black",
     "python.linting.flake8Path": "pflake8",
     "activitusbar.alignment": "Right",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "editor.rulers": [
         80
     ],

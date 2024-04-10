@@ -25,13 +25,13 @@ Existem várias tabelas de caracteres usadas na computação mas nesse treinamen
 vamos ficar em apenas duas `ascii` e `utf8`.
 
 A tabela `ASCII` possui 128 posições, ou seja, vai do 0 ao 127 e em cada posição
-armazena apenas um caracter.
+armazena apenas um caractere.
 
 
 ![](./imgs/ascii.png)
 
-Estes são os carecteres básicos da lingua inglesa e como pode perceber ela não
-considera acentuação ou carecteres especiais de outros idiomas como Russo ou 
+Estes são os caracteres básicos da língua inglesa e como pode perceber ela não
+considera acentuação ou caracteres especiais de outros idiomas como Russo ou 
 Mandarim.
 
 Quando a computação globalizou foi preciso mudar de tabela e adotar uma maior que
@@ -42,13 +42,13 @@ A tabela `unicode` de `8 bits` - **utf8** atualmente tem 120 mil caracteres.
 
 https://unicode-table.com/en/
 
-Nesta tabela além da tabela ASCII padrão, apartir da posição `128` temos acentuação
+Nesta tabela além da tabela ASCII padrão, a partir da posição `128` temos acentuação
 e sub tabelas para simbolos e emojis.
 
 Na tabela `ASCII` cada caracter ocupava menos de 1 byte (7 bits) e por isso que
-`A` é `65` que na tabela é `1000001` (7 digitos).
+`A` é `65` que na tabela é `1000001` (7 dígitos).
 
-Já na tabela unicode cada caractere pode ser formado por mais de um byte, por
+Já na tabela unicode cada caracter pode ser formado por mais de um byte, por
 exemplo, uma letra com acento `Ã` ocupa 2 bytes `11000011 10000011` na tabela.
 
 E alguns emojis como o 🍉 ocupam 4 bytes `11110000 10011111 10001101 10001001`
@@ -80,15 +80,15 @@ melancia_em_bytes = b'\xf0\x9f\x8d\x89'
 '🍉'
 ```
 
-O objeto ali iniciado por `b''` é uma sequencia de bytes em formato hexadecimal
-a titulo de curiosidade
+O objeto ali iniciado por `b''` é uma sequência de bytes em formato hexadecimal
+a titulo de curiosidade:
 
 - f0 = 11110000 
 - 9f = 10011111 
 - 8d = 10001101 
 - 89 = 10001001
 
-Que são os 4 bytes que formam o carecte 🍉 e você pode verificar isso no Python
+Que são os 4 bytes que formam o caractere 🍉 e você pode verificar isso no Python
 com cada um dos valores da lista:
 
 ```py
@@ -101,7 +101,7 @@ Em Python números começados com `0b` são binários e `0x` são hexadecimais.
 #### Strings, ou cadeia de caracteres
 
 Até aqui falamos de caracteres isolados como `A`, `B`, `🍉` mas ao programar
-também precisaremos juntar esses carecteres para formar palavras e frases,
+também precisaremos juntar esses caracteres para formar palavras e frases,
 quando criamos uma variável do tipo texto em Python ele através da presença
 de aspas sejam elas simples `'` ou duplas `"` armazena esse valor em uma classe
 do tipo `str` e este tipo de dado pode armazenar um ou mais caracteres.
@@ -112,8 +112,8 @@ type(nome)
 ```
 
 E como você já deve ter imaginado aqui estamos armazenando cada uma das letras
-`B`, `r`, `u`, `n`, `o` com seus respectivos bytes e sequencia posicional em um
-único objeto. (a plavra string significa corda, cadeia ou corrente),
+`B`, `r`, `u`, `n`, `o` com seus respectivos bytes e sequência posicional em um
+único objeto. (a palavra string significa corda, cadeia ou corrente),
 
 A palavra `"Bruno"` é uma lista contendo em cada posição um caractere da tabela
 `utf8`.
@@ -138,7 +138,7 @@ A palavra `"Bruno"` é uma lista contendo em cada posição um caractere da tabe
 'o'
 ```
 
-Bem, para guardar o nome "Bruno" você mais uma vez não precisa se procupar com
+Bem, para guardar o nome "Bruno" você mais uma vez não precisa se preocupar com
 esses detalhes todos, basta fazer `nome = "Bruno"` e usar este texto para efetuar
 as operações que você desejar, porém é muito útil saber como o objeto está
 implementado pois isso te permite efetuar operações como a que fizemos em 
@@ -163,7 +163,7 @@ somente os primeiros 5 caracteres.
 'P'
 ```
 
-O tipo `str` possui a maioria das carecteristicas que já abordamos nos outros
+O tipo `str` possui a maioria das características que já abordamos nos outros
 tipos de dados e uma grande quantidade de protocolos implementados, vamos ver
 alguns.
 
