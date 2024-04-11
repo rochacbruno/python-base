@@ -33,15 +33,15 @@ pontos = 355.8
 > um tipo especializado chamado `Decimal` ao invés de `float` mas não se preocupe
 > que abordaremos isso em breve.
 
-### Booleanos
+### Boleanos
 
-O tipo booleano é representado pela classe `bool` e ele pode armazenar apenas
-2 estados `Verdadeiro` e `Falso`, em teoria poderiamos aplicar aqui a lógica
+O tipo boleano é representado pela classe `bool` e ele pode armazenar apenas
+2 estados `Verdadeiro` e `Falso`, em teoria poderíamos aplicar aqui a lógica
 binária e em nosso programa dizer que `0` é falso enquanto `1` é verdadeiro, e
 de fato é isso que Python faz por debaixo dos panos, porém para ficar com uma
 sintaxe mais bonita termos o tipo `bool` e suas variações `True` e `False`.
 
-Quando utilizamos esse tipo? sempre que precisamos de **flags**, variavéis
+Quando utilizamos esse tipo? sempre que precisamos de **flags**, variáveis
 que podem estar em um desses dois estados, veja alguns exemplos:
 
 ```py
@@ -56,7 +56,7 @@ active = True
 ```
 
 Apesar de ser bastante simples, o tipo `bool` é muito útil e ele por sí só
-forma um protocolo chamado `Boolean`, com objetos booleanos podemos criar
+forma um protocolo chamado `Boolean`, com objetos boleanos podemos criar
 expressões condicionais, como as que criamos em nosso script `hello.py`
 
 ```py
@@ -109,7 +109,7 @@ o valor para armazenar nela, nesse caso usamos o objeto `None`
 NoneType
 ```
 
-Este é um tipo especial que serve para quando não possuimos um valor mas precisamos
+Este é um tipo especial que serve para quando não possuímos um valor mas precisamos
 da variável definida pois em algum momento no decorrer do programa iremos refazer
 a atribuição daquela variável.
 

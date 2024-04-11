@@ -8,7 +8,7 @@ Lá no comecinho do treinamento nós falamos brevemente que o computador só
 entende sequencias de `0` e `1`, os binários, portanto quando fazemos uma 
 atribuição como `numero = 65` o Python precisa preparar o espaço de memória
 necessário para armazenar o binário `1000001` e junto deste valor armazenar
-a referencia aos métodos e operações suportadas pelo número.
+a referência aos métodos e operações suportadas pelo número.
 
 Você pode abrir um terminal Python agora ai e verificar:
 
@@ -111,7 +111,7 @@ número ou um texto como vimos anteriormente.
 
 O tipo usado para armazenar os números inteiros em Python é representado pela
 classe `int`, em Python nós não precisamos declarar qual o tipo de dado a ser 
-usado pois o Python faz a inferência de tipos dinâmicamente, o interpretador
+usado pois o Python faz a inferência de tipos dinamicamente, o interpretador
 primeiro verifica como o valor se parece e então decide por conta própria
 qual a classe a ser utilizada, exemplos de uso de `int`
 

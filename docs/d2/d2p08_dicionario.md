@@ -1,7 +1,7 @@
 # Dicionários 
 
 Conhecidos também como HashMaps ou Arrays Associativos os dicionários são um misto
-entre o `set` e `list` e com certeza a estutura de dados mais importante da 
+entre o `set` e `list` e com certeza a estrutura de dados mais importante da 
 linguagem.
 
 Curiosidade: Todos as tipos de dados do Python são implementados usando
@@ -71,9 +71,9 @@ chave, ou seja, usamos `[]` e dentro passamos a `key` que queremos acessar.
 45678
 ```
 
-Além disso podemos diminuir a redundancia colocando objetos compostos dentro do dicinário,
+Além disso podemos diminuir a redundância colocando objetos compostos dentro do dicionário,
 ao invés de 2 chaves para representar cor podemos criar uma lista de cores e ao invés de
-2 chaves para dimensoes podemos ter um subdicionário.
+2 chaves para dimensões podemos ter um sub dicionário.
 
 ```py
 produto = {

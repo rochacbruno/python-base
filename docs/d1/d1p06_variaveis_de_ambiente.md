@@ -2,7 +2,7 @@
 
 ## Docstring e metadados dunder
 
-Em todo script Python é uma boa prática incluir um comentário de multi linhas
+Em todo script Python é uma boa prática incluir um comentário de múltiplas linhas
 logo nas primeiras linhas do script explicando o objetivo do script e 
 provendo documentação para o usuário.
 
@@ -99,7 +99,7 @@ Em nosso programa vamos por enquanto escolher a versão
 ```
 
 Iremos explorar o significado de `[:5]` logo mais quando falarmos de iteração 
-de objetos :) 
+de objetos! :) 
 
 Portanto, nosso script agora contém:
 
@@ -217,7 +217,7 @@ print(msg)
 ```
 
 
-Execute o script no terminal usando
+Execute o script no terminal usando:
 
 ```bash
 LANG=it_IT python3 hello.py
