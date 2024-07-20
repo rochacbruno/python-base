@@ -29,6 +29,7 @@ Todas as alterações efetuadas podem ser visualizadas neste PR
 
 ```py
 ...
+pydantic<2.0
 sqlmodel
 ```
 
